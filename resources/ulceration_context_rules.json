@@ -1,0 +1,1153 @@
+{
+    "context_rules": [
+        {
+            "literal": "Ulceration present",
+            "category": "ULCERATION_POSITIVE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "x",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "PRESENT"
+                    }
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration absent",
+            "category": "ULCERATION_ABSENT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "is",
+                            "will"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "x",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_AFTER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration indeterminate",
+            "category": "ULCERATION_INDETERMINATE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "x",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INDETERMINATE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration indeterminate",
+            "category": "ULCERATION_INDETERMINATE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "INDETERMINATE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "absent ulceration",
+            "category": "ULCERATION_ABSENT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "impending ulceration",
+            "category": "ULCERATION_IMPENDING",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "IMPENDING"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "ulcerated",
+            "category": "ULCERATION_POSITIVE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ULCERATED"
+                    }
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "ulcerated",
+            "category": "ULCERATION_POSITIVE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "ULCERATED"
+                    }
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "with ulceration",
+            "category": "ULCERATION_POSITIVE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ULCERATION"
+                    }
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "ulceration",
+            "category": "ULCERATION_TERM",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "ULCERATION"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration absent",
+            "category": "ULCERATION_ABSENT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "will",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_AFTER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "absent ulceration",
+            "category": "ULCERATION_ABSENT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration present",
+            "category": "ULCERATION_POSITIVE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "PRESENT"
+                    }
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "Ulceration indeterminate",
+            "category": "ULCERATION_INDETERMINATE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ULCERATION",
+                                "ULCERATED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INDETERMINATE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        },
+        {
+            "literal": "ulceration",
+            "category": "ULCERATION_INDETERMINATE",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "or"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "without"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ULCERATION"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        }
+    ]
+}

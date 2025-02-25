@@ -1,0 +1,1646 @@
+{
+    "context_rules": [
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "to"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "LESSER"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_LEFT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "LESSER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_RIGHT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "?"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "GREATER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_LEFT_PUNCT": true,
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_RIGHT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "LESSER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "BE"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFIED"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "GREATER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "GREATER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_RIGHT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFY"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mototic index",
+            "category": "DEFER",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "DEFER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFIED"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "DERMAL"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "?"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFIED"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_RIGHT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFY"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "or"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index defer",
+            "category": "MITOTIC_DEFER",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "DEFER"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "EQUAL"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "BE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFY"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "-",
+                            "specify",
+                            "number"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "LESSER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "-",
+                            "specify",
+                            "number"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "GREATER"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "of"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_RIGHT_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFY"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index no",
+            "category": "MITOTIC_RESULT",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "RESULT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "IDENTIFIED"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "DERMAL"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "?"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "?"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "+"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "INDEX",
+                                "FIGURE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "volume",
+                            "of"
+                        ]
+                    }
+                },
+                {
+                    "_": {
+                        "pretag": "DERMAL"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "LESSER"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT_VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "-",
+                            "to"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "FIGURE"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        },
+        {
+            "literal": "mitotic index",
+            "category": "MITOTIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MITOTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "-",
+                            "to"
+                        ]
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "VALUE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": "UNIT"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "max_scope": 240,
+            "max_targets": 2
+        }
+    ]
+}

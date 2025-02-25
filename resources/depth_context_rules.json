@@ -1,0 +1,3521 @@
+{
+    "context_rules": [
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Thickness",
+            "max_scope": 80,
+            "category": "DEPTH_NO_VALUE"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Breslow Thickness",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH_NO_VALUE"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                }
+            ],
+            "literal": "Thickness,value unit, no tail",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "?"
+                }
+            ],
+            "literal": "Thickness, unit value, no tail",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                }
+            ],
+            "literal": "Breslow Thickness, value unit, no tail",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "?"
+                }
+            ],
+            "literal": "Breslow Thickness,unit value, no tail",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "literal": "Thickness,value_unit, no tail ",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "literal": "Breslow Thickness, value_unit, no tail ",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "VALUE"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "IN_THICKNESS",
+                                "IN_DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "unit value, In thickness",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "VALUE"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "IN_THICKNESS",
+                                "IN_DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "value unit, In thickness",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "VALUE_UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "IN_THICKNESS",
+                                "IN_DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "value_unit, In thickness",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "VALUE"
+                    }
+                },
+                {
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH",
+                                "BRESLOW"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "value unit Thick",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "VALUE_UNIT"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH",
+                                "BRESLOW"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "value_unit Thick",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE",
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "(",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "BRESLOW",
+                                "THICKNESS",
+                                "IN_THICKNESS",
+                                "DEPTH",
+                                "INVASION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                }
+            ],
+            "literal": "Thickness",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE",
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "(",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "BRESLOW",
+                                "THICKNESS",
+                                "IN_THICKNESS",
+                                "DEPTH",
+                                "INVASION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                }
+            ],
+            "literal": "Breslow Thickness",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "MELANOMA"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                }
+            ],
+            "literal": "tumor invades to value unit",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "MELANOMA"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "literal": "tumor invades to value_unit",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Clark invasion value unit",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Clark value unit invasion",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Clark invasion value_unit",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Clark value_unit invasion",
+            "max_scope": 80,
+            "category": "MELANOMA_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_TEMPLATE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "mostly template",
+            "max_scope": 80,
+            "category": "UNCERTAIN_MEASUREMENT"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Uncertain",
+            "max_scope": 80,
+            "category": "UNCERTAIN_NO_MEASUREMENT"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Uncertain",
+            "max_scope": 80,
+            "category": "UNCERTAIN_NO_MEASUREMENT"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NOT_APPLICABLE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Not applicable",
+            "max_scope": 80,
+            "category": "NOT_APPLICABLE"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NOT_APPLICABLE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "Not applicable",
+            "max_scope": 80,
+            "category": "NOT_APPLICABLE"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NOT_MEASURED"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not measured",
+            "max_scope": 80,
+            "category": "NOT_MEASURED"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NOT_MEASURED"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not measured",
+            "max_scope": 80,
+            "category": "NOT_MEASURED"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "MELANOMA"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            ",",
+                            ":",
+                            "-"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "approximately",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "VALUE_UNIT"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "tumor value unit",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "[{\"_\":{\"concept_tag\":\"TUMOR\"}},{\"TEXT\":{\"IN\":[\",\",\":\",\"-\"]},\"OP\":\"?\"},{\"LOWER\":\"approximately\",\"OP\":\"?\"},{\"_\":{\"concept_tag\":\"VALUE\"}},\"OP\":\"+\"},{\"_\":{\"concept_tag\":\"UNIT\"}},\"OP\":\"+\"}]"
+                    }
+                }
+            ],
+            "literal": "tumor value unit",
+            "max_scope": 80,
+            "category": "DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CLARK"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "clark level",
+            "max_scope": 80,
+            "category": "CLARK_DEPTH"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CLARK_SHORT"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "clark level short",
+            "max_scope": 80,
+            "category": "CLARK_DEPTH"
+        }
+    ]
+}

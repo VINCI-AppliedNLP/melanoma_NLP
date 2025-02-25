@@ -1,0 +1,803 @@
+{
+    "target_rules": [
+        {
+            "literal": "Histology_group1",
+            "category": "HISTOLOGY",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group1",
+            "category": "HISTOLOGY",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "CANCER_DESCRIPTOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group1",
+            "category": "HISTOLOGY",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CANCER_DESCRIPTOR"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group2",
+            "category": "MEL_UNSPEC",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CANCER_DESCRIPTOR"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group2",
+            "category": "MEL_UNSPEC",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group2",
+            "category": "MEL_UNSPEC",
+            "pattern": [
+                {
+                    "LOWER": "invasive"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    }
+                },
+                {
+                    "LOWER": "melanocytic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    }
+                },
+                {
+                    "LOWER": "neoplasia"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group3",
+            "category": "NOT_MELANOMA_DX",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "NOT_MELANOMA_DX"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_edge_case",
+            "category": "HISTOLOGY",
+            "pattern": [
+                {
+                    "LOWER": "lentigo"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "maligna"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_edge_case",
+            "category": "HISTOLOGY",
+            "pattern": [
+                {
+                    "LOWER": "precancerous"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanosis"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group4",
+            "category": "MALIGNANCY",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MALIGNANCY"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group5",
+            "category": "TUMOR_HIST",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group5",
+            "category": "TUMOR_HIST",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "CANCER_DESCRIPTOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group5",
+            "category": "TUMOR_HIST",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CANCER_DESCRIPTOR"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group6",
+            "category": "TUMOR_UNSPEC",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "CANCER_DESCRIPTOR"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group6",
+            "category": "TUMOR_UNSPEC",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group7",
+            "category": "PENDING",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "PENDING"
+                    }
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group3-2",
+            "category": "NOT_MELANOMA_DX",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MELANOCYTIC"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NOT_MELANOMA_DX"
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "literal": "Histology_group3-3",
+            "category": "NOT_MELANOMA_DX",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MELANOMA"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": "scar"
+                    },
+                    "OP": "+"
+                }
+            ]
+        }
+    ]
+}

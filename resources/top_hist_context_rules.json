@@ -1,0 +1,2249 @@
+{
+    "context_rules": [
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group1",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "SKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group1",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group3",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group3",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group1-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "SKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group1-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group2-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group2-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group3-2",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group3-2",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group1",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "SKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group1",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group3",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Topography_group3",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group1-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "SKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group1-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group2-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group2-2",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "LOCATION"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group3-2",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": "("
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ANATOMY_NONSKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY_NONSKIN",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")"
+                }
+            ],
+            "literal": "Topography_group3-2",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TYPE"
+                    }
+                }
+            ],
+            "literal": "Histology_group5",
+            "max_scope": 200,
+            "category": "HISTOLOGY_TYPE"
+        },
+        {
+            "max_targets": 20,
+            "direction": "BACKWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "TYPE"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "Histology_group5",
+            "max_scope": 200,
+            "category": "HISTOLOGY_TYPE"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY",
+                                "MELANOMA",
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "CONJ",
+                                "DESIGNATED",
+                                "CLARK_SHORT",
+                                "LOCATION",
+                                "ANATOMY"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ":"
+                }
+            ],
+            "literal": "Topography_group4",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                }
+            ],
+            "literal": "Topography_group5",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                }
+            ],
+            "literal": "Topography_group8",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "ANATOMY_NONSKIN"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                }
+            ],
+            "literal": "Topography_group5_firsttok",
+            "max_scope": 200,
+            "category": "NONSKIN_TOPOGRAPHY"
+        },
+        {
+            "max_targets": 20,
+            "direction": "FORWARD",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SKIN"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "_": {
+                        "concept_tag": "NEWLINE"
+                    }
+                }
+            ],
+            "literal": "Topography_group8_firsttok",
+            "max_scope": 200,
+            "category": "SKIN_TOPOGRAPHY"
+        }
+    ]
+}

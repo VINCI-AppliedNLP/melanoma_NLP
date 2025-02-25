@@ -1,0 +1,129 @@
+{
+    "context_rules": [
+        {
+            "literal": "metastasis",
+            "category": "METASTATIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                }
+            ],
+            "max_scope": 10,
+            "max_targets": 1
+        },
+        {
+            "literal": "metastasis",
+            "category": "NEGATED_METASTATIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "n"
+                },
+                {
+                    "LOWER": "/"
+                },
+                {
+                    "LOWER": "a"
+                }
+            ],
+            "max_scope": 10,
+            "max_targets": 1
+        },
+        {
+            "literal": "metastasis",
+            "category": "NEGATED_METASTATIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "LOWER": "applicable"
+                }
+            ],
+            "max_scope": 12,
+            "max_targets": 3
+        },
+        {
+            "literal": "consistent with metastasis",
+            "category": "METASTATIC",
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "LOWER": "consistent"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "w/"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "a",
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "process",
+                    "OP": "?"
+                }
+            ],
+            "max_scope": 80,
+            "max_targets": 2
+        }
+    ]
+}

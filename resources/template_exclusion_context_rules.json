@@ -1,0 +1,592 @@
+{
+    "context_rules": [
+        {
+            "direction": "BIDIRECTIONAL",
+            "literal": "template",
+            "category": "T_STAGING_GUIDELINE",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "T_STAGE"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanoma"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "VALUE"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "VALUE"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "direction": "BIDIRECTIONAL",
+            "literal": "template",
+            "category": "T_STAGING_GUIDELINE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^p?t[0-4][a-d]?$"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "MELANOMA"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+$"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+$"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "GREATER",
+                                "LESSER"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "in",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "thickness",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "with",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "or",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ULCERATION"
+                    }
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                }
+            ]
+        }
+    ]
+}
