@@ -889,6 +889,7 @@ def grouping_top(piv_1_encoded,return_max_values=1):
 
     ##Setting melanoma unsp to only work with not also in situ
     top_grouped.loc[(top_grouped['in_situ'] != 1) & (top_grouped['melanoma_unspecified'] == 1),'cutaneous'] = 1
+    top_grouped.loc[(top_grouped['breslow_depth_mm'] > 0) & (top_grouped['melanoma_unspecified'] == 1),'cutaneous'] = 1
     
     top_grouped['ocular'] = top_grouped[melanoma_ocular].any(axis=1).astype(int)
     top_grouped['in_situ'] = top_grouped[melanoma_in_situ].any(axis=1).astype(int)
