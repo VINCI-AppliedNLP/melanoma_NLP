@@ -1,0 +1,17 @@
+name: melanoma_nlp  # Change to your preferred environment name
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.8  # Ensure compatibility with medspacy and spacy
+  - pandas
+  - numpy
+  - spacy
+  - ipython
+  - regex
+  - jsonschema  # Required for working with JSON validation
+  - jupyter
+  - scikit-learn 
+  - pip
+  - pip:
+      - medspacy  # Install medspacy from pip 
