@@ -18,6 +18,7 @@
         },
         {
             "literal": "ear canal",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "ear"
@@ -43,8 +44,7 @@
                 {
                     "LOWER": "canal"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "shoulder",
@@ -144,6 +144,7 @@
         },
         {
             "literal": "chest",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "chest"
@@ -170,8 +171,7 @@
                     "LOWER": "wall",
                     "OP": "?"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "arm",
@@ -227,6 +227,7 @@
         },
         {
             "literal": "nasal bridge",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "nasal"
@@ -252,8 +253,7 @@
                 {
                     "LOWER": "bridge"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "eye",
@@ -265,6 +265,7 @@
         },
         {
             "literal": "supranasal tip",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "supranasal"
@@ -291,8 +292,7 @@
                     "LOWER": "tip",
                     "OP": "?"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "occipital",
@@ -388,6 +388,7 @@
         },
         {
             "literal": "ear parts",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "ear"
@@ -418,8 +419,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "finger",
@@ -503,6 +503,7 @@
         },
         {
             "literal": "site unspecified",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "site"
@@ -528,11 +529,11 @@
                 {
                     "LOWER": "unspecified"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "site not stated",
+            "category": "ANATOMY",
             "pattern": [
                 {
                     "LOWER": "site"
@@ -579,8 +580,7 @@
                 {
                     "LOWER": "stated"
                 }
-            ],
-            "category": "ANATOMY"
+            ]
         },
         {
             "literal": "foot",
@@ -604,6 +604,7 @@
         },
         {
             "literal": "lymph",
+            "category": "ANATOMY_NONSKIN",
             "pattern": [
                 {
                     "LOWER": "lymph"
@@ -635,11 +636,11 @@
                     },
                     "OP": "?"
                 }
-            ],
-            "category": "ANATOMY_NONSKIN"
+            ]
         },
         {
             "literal": "sentinel lymph",
+            "category": "ANATOMY_NONSKIN",
             "pattern": [
                 {
                     "LOWER": "sentinel"
@@ -692,11 +693,11 @@
                     },
                     "OP": "?"
                 }
-            ],
-            "category": "ANATOMY_NONSKIN"
+            ]
         },
         {
             "literal": "sentinel node",
+            "category": "ANATOMY_NONSKIN",
             "pattern": [
                 {
                     "LOWER": "sentinel"
@@ -727,8 +728,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "ANATOMY_NONSKIN"
+            ]
         },
         {
             "literal": "sln",
@@ -736,6 +736,7 @@
         },
         {
             "literal": "hepatic flexure",
+            "category": "ANATOMY_NONSKIN",
             "pattern": [
                 {
                     "LOWER": "hepatic"
@@ -761,8 +762,7 @@
                 {
                     "LOWER": "flexure"
                 }
-            ],
-            "category": "ANATOMY_NONSKIN"
+            ]
         },
         {
             "literal": "gallbladder",
@@ -794,6 +794,7 @@
         },
         {
             "literal": "colon",
+            "category": "ANATOMY_NONSKIN",
             "pattern": [
                 {
                     "LOWER": {
@@ -825,8 +826,7 @@
                 {
                     "LOWER": "colon"
                 }
-            ],
-            "category": "ANATOMY_NONSKIN"
+            ]
         },
         {
             "literal": "branch",
@@ -838,6 +838,7 @@
         },
         {
             "literal": "pharyngeal wall",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "pharyngeal"
@@ -863,8 +864,7 @@
                 {
                     "LOWER": "wall"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "area",
@@ -880,6 +880,7 @@
         },
         {
             "literal": "designated",
+            "category": "DESIGNATED",
             "pattern": [
                 {
                     "LOWER": "designated"
@@ -906,22 +907,22 @@
                     "LOWER": "from",
                     "OP": "?"
                 }
-            ],
-            "category": "DESIGNATED"
+            ]
         },
         {
             "literal": "desmoplastic",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "desmoplastic"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "in situ",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -929,11 +930,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "nos",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -941,22 +942,22 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "nevoid",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "nevoid"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "spindle",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -964,22 +965,22 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "spitzoid",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "spitzoid"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "superficial spreading",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -987,44 +988,44 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "letiginous",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "letiginous"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "acral",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "acral"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "nodular",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "nodular"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "epithelioid",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -1032,55 +1033,55 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "amelanotic",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "amelanotic"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "choroidal",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "choroidal"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "mucosal",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "mucosal"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "ocular",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
                         "pretag": "ocular"
                     }
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "hutchinson's melanotic freckle",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -1088,11 +1089,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "balloon cell",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -1100,11 +1101,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "minimal deviation",
+            "category": "CANCER_DESCRIPTOR",
             "pattern": [
                 {
                     "_": {
@@ -1112,11 +1113,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "CANCER_DESCRIPTOR"
+            ]
         },
         {
             "literal": "lentigo maligna",
+            "category": "HISTOLOGY_TERM",
             "pattern": [
                 {
                     "_": {
@@ -1124,8 +1125,7 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "HISTOLOGY_TERM"
+            ]
         },
         {
             "literal": "invasive",
@@ -1169,6 +1169,7 @@
         },
         {
             "literal": "pre-",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "pre"
@@ -1195,8 +1196,7 @@
                     "LOWER": "-",
                     "OP": "?"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "r",
@@ -1216,6 +1216,7 @@
         },
         {
             "literal": "mid",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "mid"
@@ -1242,8 +1243,7 @@
                     "TEXT": "-",
                     "OP": "?"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "lower",
@@ -1335,6 +1335,7 @@
         },
         {
             "literal": "base of",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "base"
@@ -1360,11 +1361,11 @@
                 {
                     "LOWER": "of"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "tail of",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "tail"
@@ -1390,8 +1391,7 @@
                 {
                     "LOWER": "of"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "tip",
@@ -1435,6 +1435,7 @@
         },
         {
             "literal": "post-",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "LOWER": "post"
@@ -1461,8 +1462,7 @@
                     "LOWER": "-",
                     "OP": "?"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "apex",
@@ -1470,6 +1470,7 @@
         },
         {
             "literal": "melanoma site",
+            "category": "LOCATION",
             "pattern": [
                 {
                     "_": {
@@ -1497,8 +1498,7 @@
                 {
                     "LOWER": "site"
                 }
-            ],
-            "category": "LOCATION"
+            ]
         },
         {
             "literal": "malignancy",
@@ -1506,6 +1506,7 @@
         },
         {
             "literal": "malignant-recurrent-residual",
+            "category": "CANCER_DESCRIPTOR",
             "pattern": [
                 {
                     "_": {
@@ -1519,8 +1520,7 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "CANCER_DESCRIPTOR"
+            ]
         },
         {
             "literal": "Node",
@@ -1528,6 +1528,7 @@
         },
         {
             "literal": "Basal Cell Carcinoma",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1535,11 +1536,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "Squamous cell carcinoma",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1547,11 +1548,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "actinic keratosis",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1559,11 +1560,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "bowen's disease",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1571,33 +1572,33 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "carcinoma",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "carcinoma"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "cyst",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "cyst"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "lentigo simplex",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1605,33 +1606,33 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "nevus",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "nevus"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "acrochordon",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "acrochordon"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "skin tag",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -1639,85 +1640,84 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "dermatitis",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "dermatitis"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "scar",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "scar"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "fibrosis",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "fibrosis"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "lymphocytosis",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "lymphocytosis"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "spongiosis",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "spongiosis"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "papilloma",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "papilloma"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "polyp",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
                         "pretag": "polyp"
                     }
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "pending",
@@ -1725,6 +1725,7 @@
         },
         {
             "literal": "tissue",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": "soft",
@@ -1751,11 +1752,11 @@
                 {
                     "LOWER": "tissue"
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "biopsy",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": {
@@ -1796,11 +1797,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "biopsy",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": "multiple"
@@ -1862,8 +1863,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "specimen",
@@ -1883,6 +1883,7 @@
         },
         {
             "literal": "wide excision",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": "wide"
@@ -1908,8 +1909,7 @@
                 {
                     "LOWER": "excision"
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "dissection",
@@ -1933,6 +1933,7 @@
         },
         {
             "literal": "segmental-wedge resection",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": {
@@ -1963,11 +1964,11 @@
                 {
                     "LOWER": "resection"
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "skin",
+            "category": "SKIN",
             "pattern": [
                 {
                     "LOWER": "skin"
@@ -1999,8 +2000,7 @@
                     },
                     "OP": "?"
                 }
-            ],
-            "category": "SKIN"
+            ]
         },
         {
             "literal": "tumor",
@@ -2024,6 +2024,7 @@
         },
         {
             "literal": "unknown primary",
+            "category": "UNKNOWN_PRIMARY",
             "pattern": [
                 {
                     "LOWER": "primay"
@@ -2070,11 +2071,11 @@
                 {
                     "LOWER": "unknown"
                 }
-            ],
-            "category": "UNKNOWN_PRIMARY"
+            ]
         },
         {
             "literal": "CONJ",
+            "category": "CONJ",
             "pattern": [
                 {
                     "LOWER": {
@@ -2097,11 +2098,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "CONJ"
+            ]
         },
         {
             "literal": "melanoma",
+            "category": "MELANOMA",
             "pattern": [
                 {
                     "_": {
@@ -2109,19 +2110,18 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "MELANOMA"
+            ]
         },
         {
             "literal": "metastatic",
+            "category": "METASTASIS",
             "pattern": [
                 {
                     "_": {
                         "pretag": "METASTASIS"
                     }
                 }
-            ],
-            "category": "METASTASIS"
+            ]
         },
         {
             "literal": "measure",
@@ -2149,6 +2149,7 @@
         },
         {
             "literal": "in thickness",
+            "category": "IN_THICKNESS",
             "pattern": [
                 {
                     "LOWER": "in"
@@ -2195,11 +2196,11 @@
                 {
                     "LOWER": "thickness"
                 }
-            ],
-            "category": "IN_THICKNESS"
+            ]
         },
         {
             "literal": "tumor thickness",
+            "category": "THICKNESS",
             "pattern": [
                 {
                     "LOWER": "tumor"
@@ -2246,11 +2247,11 @@
                 {
                     "LOWER": "thickness"
                 }
-            ],
-            "category": "THICKNESS"
+            ]
         },
         {
             "literal": "tumor thickness",
+            "category": "THICKNESS",
             "pattern": [
                 {
                     "LOWER": "maximum"
@@ -2297,8 +2298,7 @@
                 {
                     "LOWER": "tumor"
                 }
-            ],
-            "category": "THICKNESS"
+            ]
         },
         {
             "literal": "depth",
@@ -2306,6 +2306,7 @@
         },
         {
             "literal": "in depth",
+            "category": "IN_DEPTH",
             "pattern": [
                 {
                     "LOWER": "in"
@@ -2352,8 +2353,7 @@
                 {
                     "LOWER": "depth"
                 }
-            ],
-            "category": "IN_DEPTH"
+            ]
         },
         {
             "literal": "invasion",
@@ -2425,58 +2425,58 @@
         },
         {
             "literal": "Number",
+            "category": "VALUE",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^[\\d]*\\.?\\d+$"
                     }
                 }
-            ],
-            "category": "VALUE"
+            ]
         },
         {
             "literal": "Number",
+            "category": "VALUE_UNIT",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^[\\d]*\\.?\\d+mm$"
                     }
                 }
-            ],
-            "category": "VALUE_UNIT"
+            ]
         },
         {
             "literal": "Number",
+            "category": "VALUE_UNIT",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^[\\d]*\\.?\\d+cm$"
                     }
                 }
-            ],
-            "category": "VALUE_UNIT"
+            ]
         },
         {
             "literal": "Number",
+            "category": "VALUE_UNIT",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^[\\d]*\\.?\\d+millimeters?$"
                     }
                 }
-            ],
-            "category": "VALUE_UNIT"
+            ]
         },
         {
             "literal": "Number",
+            "category": "VALUE_UNIT",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^[\\d]*\\.?\\d+centimeters?$"
                     }
                 }
-            ],
-            "category": "VALUE_UNIT"
+            ]
         },
         {
             "literal": "mm",
@@ -2528,14 +2528,14 @@
         },
         {
             "literal": "pT",
+            "category": "T_STAGE",
             "pattern": [
                 {
                     "LOWER": {
                         "REGEX": "^p?t[0-4][a-d]?$"
                     }
                 }
-            ],
-            "category": "T_STAGE"
+            ]
         },
         {
             "literal": "reexcision",
@@ -2595,6 +2595,7 @@
         },
         {
             "literal": "Atypical melanocytes are seen in the superficial dermis at an approximate depth of 0.25 mm and in the deep dermis at an approximate depth of 1.01 mm",
+            "category": "TEMPLATE",
             "pattern": [
                 {
                     "LOWER": "atypical"
@@ -3145,11 +3146,11 @@
                 {
                     "LOWER": "mm"
                 }
-            ],
-            "category": "TEMPLATE"
+            ]
         },
         {
             "literal": "invasion to a depth of <small_num> cannot be entirely excluded",
+            "category": "UNCERTAIN_TEMPLATE",
             "pattern": [
                 {
                     "LOWER": "invasion"
@@ -3389,11 +3390,11 @@
                 {
                     "LOWER": "excluded"
                 }
-            ],
-            "category": "UNCERTAIN_TEMPLATE"
+            ]
         },
         {
             "literal": "cannot exclude focal invasion <small_num> ",
+            "category": "UNCERTAIN_TEMPLATE",
             "pattern": [
                 {
                     "LOWER": "can"
@@ -3528,11 +3529,11 @@
                     "LOWER": "mm",
                     "OP": "?"
                 }
-            ],
-            "category": "UNCERTAIN_TEMPLATE"
+            ]
         },
         {
             "literal": "not applicable",
+            "category": "NOT_APPLICABLE",
             "pattern": [
                 {
                     "LOWER": "not"
@@ -3558,11 +3559,11 @@
                 {
                     "LOWER": "applicable"
                 }
-            ],
-            "category": "NOT_APPLICABLE"
+            ]
         },
         {
             "literal": "cannot be stated with absolute certainty",
+            "category": "UNCERTAIN",
             "pattern": [
                 {
                     "LOWER": "can"
@@ -3693,11 +3694,11 @@
                 {
                     "LOWER": "certainty"
                 }
-            ],
-            "category": "UNCERTAIN"
+            ]
         },
         {
             "literal": "may change",
+            "category": "UNCERTAIN",
             "pattern": [
                 {
                     "LOWER": "may"
@@ -3723,11 +3724,11 @@
                 {
                     "LOWER": "change"
                 }
-            ],
-            "category": "UNCERTAIN"
+            ]
         },
         {
             "literal": "not measured",
+            "category": "NOT_MEASURED",
             "pattern": [
                 {
                     "LOWER": "not"
@@ -3753,11 +3754,11 @@
                 {
                     "LOWER": "measured"
                 }
-            ],
-            "category": "NOT_MEASURED"
+            ]
         },
         {
             "literal": "superficially invasive",
+            "category": "SUPERFICIAL",
             "pattern": [
                 {
                     "LOWER": "superficially"
@@ -3783,11 +3784,11 @@
                 {
                     "LOWER": "invasive"
                 }
-            ],
-            "category": "SUPERFICIAL"
+            ]
         },
         {
             "literal": "superficial biopsy limits interpretation",
+            "category": "SUPERFICIAL_BIOPSY",
             "pattern": [
                 {
                     "LOWER": "superficial"
@@ -3855,11 +3856,11 @@
                 {
                     "LOWER": "interpretation"
                 }
-            ],
-            "category": "SUPERFICIAL_BIOPSY"
+            ]
         },
         {
             "literal": "greater breslow thickness than current excision",
+            "category": "GREATER_THAN_EXCISION",
             "pattern": [
                 {
                     "LOWER": "greater"
@@ -3969,11 +3970,11 @@
                 {
                     "LOWER": "excision"
                 }
-            ],
-            "category": "GREATER_THAN_EXCISION"
+            ]
         },
         {
             "literal": "ulceration",
+            "category": "ULCERATION",
             "pattern": [
                 {
                     "LOWER": {
@@ -4007,8 +4008,7 @@
                 {
                     "LOWER": "ulceration"
                 }
-            ],
-            "category": "ULCERATION"
+            ]
         },
         {
             "literal": "ulceration:",
@@ -4020,6 +4020,7 @@
         },
         {
             "literal": "ulceration",
+            "category": "ULCERATION",
             "pattern": [
                 {
                     "TEXT": "\"",
@@ -4068,8 +4069,7 @@
                     "TEXT": "\"",
                     "OP": "?"
                 }
-            ],
-            "category": "ULCERATION"
+            ]
         },
         {
             "literal": "absent",
@@ -4077,6 +4077,7 @@
         },
         {
             "literal": "not identified",
+            "category": "ABSENT_AFTER",
             "pattern": [
                 {
                     "LOWER": "not"
@@ -4102,11 +4103,11 @@
                 {
                     "LOWER": "identified"
                 }
-            ],
-            "category": "ABSENT_AFTER"
+            ]
         },
         {
             "literal": "None identified",
+            "category": "ABSENT_AFTER",
             "pattern": [
                 {
                     "LOWER": "none"
@@ -4132,11 +4133,11 @@
                 {
                     "LOWER": "identified"
                 }
-            ],
-            "category": "ABSENT_AFTER"
+            ]
         },
         {
             "literal": "not present",
+            "category": "ABSENT_AFTER",
             "pattern": [
                 {
                     "LOWER": "not"
@@ -4162,8 +4163,7 @@
                 {
                     "LOWER": "present"
                 }
-            ],
-            "category": "ABSENT_AFTER"
+            ]
         },
         {
             "literal": "none",
@@ -4171,6 +4171,7 @@
         },
         {
             "literal": "no evidence of",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "no"
@@ -4222,11 +4223,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "no significant",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "no"
@@ -4252,8 +4253,7 @@
                 {
                     "LOWER": "significant"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "no",
@@ -4269,6 +4269,7 @@
         },
         {
             "literal": "without",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "without"
@@ -4344,8 +4345,7 @@
                     },
                     "OP": "?"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "non-",
@@ -4353,6 +4353,7 @@
         },
         {
             "literal": "non-",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "non"
@@ -4378,8 +4379,7 @@
                 {
                     "TEXT": "-"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "neither",
@@ -4387,6 +4387,7 @@
         },
         {
             "literal": "absence of",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": {
@@ -4418,11 +4419,11 @@
                 {
                     "TEXT": "of"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "rule out for",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": {
@@ -4479,11 +4480,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "no findings to indicate",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "no"
@@ -4551,11 +4552,11 @@
                 {
                     "LOWER": "indicate"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "rule out",
+            "category": "ABSENT",
             "pattern": [
                 {
                     "LOWER": {
@@ -4586,11 +4587,11 @@
                 {
                     "LOWER": "out"
                 }
-            ],
-            "category": "ABSENT"
+            ]
         },
         {
             "literal": "with the lack of",
+            "category": "IGNORE",
             "pattern": [
                 {
                     "LOWER": "with"
@@ -4658,8 +4659,7 @@
                 {
                     "LOWER": "of"
                 }
-            ],
-            "category": "IGNORE"
+            ]
         },
         {
             "literal": "negative",
@@ -4667,6 +4667,7 @@
         },
         {
             "literal": "negative for",
+            "category": "ABSENT_BEFORE",
             "pattern": [
                 {
                     "LOWER": "negative"
@@ -4692,8 +4693,7 @@
                 {
                     "LOWER": "for"
                 }
-            ],
-            "category": "ABSENT_BEFORE"
+            ]
         },
         {
             "literal": "indeterminate",
@@ -4709,6 +4709,7 @@
         },
         {
             "literal": "suggestive of",
+            "category": "INDETERMINATE",
             "pattern": [
                 {
                     "LOWER": "suggestive"
@@ -4734,8 +4735,7 @@
                 {
                     "LOWER": "of"
                 }
-            ],
-            "category": "INDETERMINATE"
+            ]
         },
         {
             "literal": "present",
@@ -4759,17 +4759,18 @@
         },
         {
             "literal": "MELANOCYTIC",
+            "category": "MELANOCYTIC",
             "pattern": [
                 {
                     "_": {
                         "pretag": "MELANOCYTIC"
                     }
                 }
-            ],
-            "category": "MELANOCYTIC"
+            ]
         },
         {
             "literal": "level of invasion",
+            "category": "CLARK_SHORT",
             "pattern": [
                 {
                     "LOWER": "level"
@@ -4863,11 +4864,11 @@
                         "REGEX": "^(i{1,4}|v|iv|[0-5])$"
                     }
                 }
-            ],
-            "category": "CLARK_SHORT"
+            ]
         },
         {
             "literal": "level of invasion excision",
+            "category": "SAMPLE",
             "pattern": [
                 {
                     "LOWER": "level"
@@ -4949,11 +4950,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "SAMPLE"
+            ]
         },
         {
             "literal": "level of invasion",
+            "category": "IGNORE",
             "pattern": [
                 {
                     "LOWER": "lymph"
@@ -5067,11 +5068,11 @@
                         "REGEX": "^(i{1,4}|v|iv|[0-5])$"
                     }
                 }
-            ],
-            "category": "IGNORE"
+            ]
         },
         {
             "literal": "level of invasion",
+            "category": "IGNORE",
             "pattern": [
                 {
                     "LOWER": "level"
@@ -5174,11 +5175,11 @@
                 {
                     "LOWER": "dissection"
                 }
-            ],
-            "category": "IGNORE"
+            ]
         },
         {
             "literal": "Clark level",
+            "category": "CLARK",
             "pattern": [
                 {
                     "LOWER": {
@@ -5359,8 +5360,7 @@
                         "REGEX": "^(i{1,4}|v|iv|[0-5])$"
                     }
                 }
-            ],
-            "category": "CLARK"
+            ]
         },
         {
             "literal": "transect",
@@ -5396,6 +5396,7 @@
         },
         {
             "literal": "present",
+            "category": "PRESENT",
             "pattern": [
                 {
                     "LOWER": {
@@ -5431,11 +5432,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "PRESENT"
+            ]
         },
         {
             "literal": "not present on",
+            "category": "UNINVOLVED",
             "pattern": [
                 {
                     "LOWER": "not"
@@ -5492,8 +5493,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "UNINVOLVED"
+            ]
         },
         {
             "literal": "positive",
@@ -5501,6 +5501,7 @@
         },
         {
             "literal": "not positive/involved",
+            "category": "UNINVOLVED",
             "pattern": [
                 {
                     "LOWER": {
@@ -5539,11 +5540,11 @@
                         ]
                     }
                 }
-            ],
-            "category": "UNINVOLVED"
+            ]
         },
         {
             "literal": "extending/invasion to",
+            "category": "INVOLVED_BEFORE",
             "pattern": [
                 {
                     "LOWER": {
@@ -5581,8 +5582,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "INVOLVED_BEFORE"
+            ]
         },
         {
             "literal": "margins",
@@ -5614,6 +5614,7 @@
         },
         {
             "literal": "level of invasion addition",
+            "category": "CLARK_SHORT",
             "pattern": [
                 {
                     "LOWER": "level"
@@ -5726,11 +5727,11 @@
                         "REGEX": "^(i{1,4}|v|iv|[0-5])$"
                     }
                 }
-            ],
-            "category": "CLARK_SHORT"
+            ]
         },
         {
             "literal": "Clark level addition",
+            "category": "CLARK",
             "pattern": [
                 {
                     "LOWER": {
@@ -5938,8 +5939,7 @@
                         "REGEX": "^(i{1,4}|v|iv|[0-5])$"
                     }
                 }
-            ],
-            "category": "CLARK"
+            ]
         },
         {
             "literal": "uninvolved",
@@ -5947,6 +5947,7 @@
         },
         {
             "literal": "melanocytic hyperplasia",
+            "category": "NOT_MELANOMA_DX",
             "pattern": [
                 {
                     "_": {
@@ -5954,11 +5955,11 @@
                     },
                     "OP": "+"
                 }
-            ],
-            "category": "NOT_MELANOMA_DX"
+            ]
         },
         {
             "literal": "cannot rule out",
+            "category": "UNCERTAIN_BEFORE",
             "pattern": [
                 {
                     "LOWER": "can"
@@ -6026,11 +6027,11 @@
                 {
                     "LOWER": "out"
                 }
-            ],
-            "category": "UNCERTAIN_BEFORE"
+            ]
         },
         {
             "literal": "cannot be excluded",
+            "category": "UNCERTAIN_AFTER",
             "pattern": [
                 {
                     "LOWER": "can"
@@ -6103,8 +6104,7 @@
                         ]
                     }
                 }
-            ],
-            "category": "UNCERTAIN_AFTER"
+            ]
         },
         {
             "literal": "border",
@@ -6117,6 +6117,22 @@
         {
             "literal": "\n",
             "category": "NEWLINE"
+        },
+        {
+            "literal": "superficial",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "melanoma marker",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "#",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "calf",
+            "category": "ANATOMY"
         }
     ]
 }

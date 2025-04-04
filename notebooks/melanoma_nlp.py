@@ -213,10 +213,36 @@ def first_token_callback(target,modifier,span_between):
     else:
         return True
 
+
+def check_terminators(target,modifier,span_between):
+    '''
+    Excludes cases where certain characters are between modifiers and the target.
+    
+    For instance, in the phrase 'melanoma, margins free', free should not modify melanoma
+    '''
+    terminators = ['MARGINS','NEWLINE','CONJ'] #May want to eliminate Conj from this
+    span_between_tags = [tok._.concept_tag for tok in span_between]
+    for terminator in terminators:
+        if terminator in span_between_tags:
+            return False
+    return True
+
+def check_terminators_comment(target,modifier,span_between):
+    '''
+    Excludes cases where certain characters are between modifiers and the target.
+    '''
+    span_between_tags = [tok._.concept_tag for tok in span_between]
+    for i in range(len(span_between_tags)-1):
+        if span_between_tags[i] == 'NEWLINE' and span_between_tags[i+1] == 'NEWLINE':
+            return False
+    return True
+
 def add_onmatch_terminators(rule_list):
     """Used to make quick adjustments to rules without changing json, or to add arguments to rules that are not saved in json files"""
     context_rules_upd = []
     for rule in rule_list:
+        if rule.literal in ["comment","note:"]:
+            context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY'],on_modifies=check_terminators_comment,allowed_types=["MEL_UNSPEC"]))
         if rule.category == "HISTOLOGY_TYPE":
             context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY'],allowed_types=["HISTOLOGY","MEL_UNSPEC"]))
         elif rule.category == "METASTATIC":
@@ -233,6 +259,10 @@ def add_onmatch_terminators(rule_list):
             context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY'],allowed_types=["HISTOLOGY","MEL_UNSPEC",'NOT_MELANOMA_DX']))
         elif (rule.literal in ['Topography_group5_firsttok','Topography_group8_firsttok']):
             context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY'],on_modifies=first_token_callback))
+        elif 'NEGATED_EXISTENCE' in rule.category:
+            context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY'],on_modifies=check_terminators))
+        elif 'HISTOLOGY_TYPE' in rule.category:
+            context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=40,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY']))
         else:
             if rule.direction != 'TERMINATE':
                 context_rules_upd.append(ConTextRule(literal=rule.literal, category=rule.category, pattern=rule.pattern, direction=rule.direction,max_scope=rule.max_scope,max_targets=rule.max_targets,terminated_by=['NONSKIN_TOPOGRAPHY','SKIN_TOPOGRAPHY']))
@@ -420,7 +450,7 @@ def nlp_checker(test_phrase,nlp):
 
 def map_histology(ent):
     """Helper function to map histology labels using the tags or entity label"""
-    if ent.label_ in ["HISTOLOGY","HISTOLOGY_TYPE","TUMOR_HIST"]: #Labels that have specific histologies
+    if ent.label_ in ["HISTOLOGY","HISTOLOGY_TYPE"]: #Labels that have specific histologies
         hist_ext = list(set([tok._.pretag.replace(' ','_').replace('\'',"") for tok in ent if tok._.concept_tag in ["HISTOLOGY_TERM"]]))
     elif (ent.label_ in ["MEL_UNSPEC"]):
         hist_ext = ["melanoma_unspecified"]
@@ -428,7 +458,7 @@ def map_histology(ent):
         hist_ext = ["cancer_unspecified"]
     elif (ent.label_ == "PENDING"):
         hist_ext = ["pending"]
-    elif ent.label_ in ["NOT_MELANOMA_DX"]:
+    elif ent.label_ in ["NOT_MELANOMA_DX","TUMOR_HIST"]:
         hist_ext = ["non_melanoma_dx"]
     else:
         hist_ext = [None] #Everything should be mapped with above conditions
@@ -461,12 +491,14 @@ def measurement_extract(span):
             return values[0]
         if units[0] == 'cm':
             return values[0] * 10
-    elif (len(units) == 2) and (len(values) == 2): #cases where both the cm and mm are reported (one value must be 10x the other)
-        a,b = values
-        if (round(a,0) == round(round(b*10,0))) or (round(b,0) == round(a * 10,0)):
-            return max(values) #take the larger number as the mm
-    else:
-        return "EXT_ERROR"
+    elif (len(units) == 2) and (len(values) == 2) and ((round(values[0],0) == round(round(values[1]*10,0))) or (round(values[1],0) == round(values[0] * 10,0))): #cases where both the cm and mm are reported (one value must be 10x the other)
+        return max(values) #take the larger number as the mm
+    elif (len(values) > 1) and (len(units)>0): #If multiple values, arbitrarily choose first value (should typically be the case)
+        if units[0] == 'mm':
+            return values[0]
+        if units[0] == 'cm':
+            return values[0] * 10
+    return "EXT_ERROR"
 
 def MI_extract_full(span):
     """Helper function to extract measurement values for mitotic index.
@@ -745,7 +777,7 @@ def flatten_on_relationships(long_df):
         piv_1['Nonskin_Topography'] = None
     for col in ['is_negated','is_historical','is_hypothetical','is_possible_existence','metastasis']:
         if col not in piv_1.columns:
-            print("Either no negation, historical, possible existence, or hypothetical contexts detected in this set. Setting negation/history/hypothetical to None")
+            #print("Either no negation, historical, possible existence, or hypothetical contexts detected in this set. Setting negation/history/hypothetical to None")
             piv_1[col] = None
     piv_1.is_negated = piv_1.is_negated.apply(first_return)
     piv_1.is_historical = piv_1.is_historical.apply(first_return)
@@ -798,16 +830,16 @@ def one_hot_encode_hist(piv_1,exclude_nonmelanoma_ulceration = 1):
         piv_1_encoded.loc[piv_1_encoded['anchor_mapping'].isin(['non_melanoma_dx']),'ulceration_status'] = None
     return piv_1_encoded
 
-melanoma_cutaneous = ['desmoplastic','epithelioid','lentigo_maligna','nevoid','nodular','melanoma_not_otherwise_specified','superficial_spreading','spindle_cell','spitzoid',
+melanoma_cutaneous = ['desmoplastic','epithelioid','nevoid','nodular','melanoma_not_otherwise_specified','superficial_spreading','spindle_cell','spitzoid',
          'letiginous',
         'acral',
          'amelanotic',
          'hutchinsons_melanotic_freckle',
-         'balloon_cell'] #'melanoma_unspecified' must also have no in-situ in order to count
+         'balloon_cell'] #'melanoma_unspecified' must also have no in-situ or 'lentigo_maligna' in order to count
 
 melanoma_ocular = ['choroidal','ocular']
 
-melanoma_in_situ = ['in_situ']
+melanoma_in_situ = ['in_situ'] # Maybe lentigo_maligna?
 
 melanoma_mucosal = ['mucosal']
 
@@ -885,11 +917,16 @@ def grouping_top(piv_1_encoded,return_max_values=1):
     top_grouped['melanoma_historical'] = top_grouped[[f"{x}_historical" for x in melanoma_dx]].any(axis=1).astype(int)
     top_grouped['Mitotic_index'] = top_grouped['Mitotic_index'].apply(max_Mitotic_index)
     top_grouped.loc[top_grouped.Topography.str.contains('eye',case=False) & (~top_grouped.Topography.str.contains('eyelid',case=False)) & (top_grouped.melanoma_unspecified == 1),'ocular'] = 1 #eye topographies are ocular melanoma
+    top_grouped.loc[top_grouped.Topography.str.contains('sinus',case=False) & (top_grouped.melanoma_unspecified == 1),'mucosal'] = 1 #sinus topographies are mucosal melanoma
     top_grouped['cutaneous'] = top_grouped[melanoma_cutaneous].any(axis=1).astype(int)
 
-    ##Setting melanoma unsp to only work with not also in situ
-    top_grouped.loc[(top_grouped['in_situ'] != 1) & (top_grouped['melanoma_unspecified'] == 1),'cutaneous'] = 1
-    top_grouped.loc[(top_grouped['breslow_depth_mm'] > 0) & (top_grouped['melanoma_unspecified'] == 1),'cutaneous'] = 1
+    ##Setting melanoma unsp to only work without in situ or lentigo
+    top_grouped.loc[(top_grouped['in_situ'] != 1) & (top_grouped['lentigo_maligna'] != 1) & (top_grouped['mucosal'] != 1) & (top_grouped['ocular'] != 1) &(top_grouped['melanoma_unspecified'] == 1),'cutaneous'] = 1
+
+    if return_max_values:
+        top_grouped.loc[(top_grouped['breslow_depth_mm'] > 0) & ((top_grouped['melanoma_unspecified'] == 1) | (top_grouped['lentigo_maligna'] == 1)),'cutaneous'] = 1
+    else:
+        top_grouped.loc[(top_grouped['breslow_depth_mm'].apply(lambda x: isinstance(x,(set,list)) and (any(v > 0 for v in x)))) & ((top_grouped['melanoma_unspecified'] == 1) | (top_grouped['lentigo_maligna'] == 1)) & (top_grouped['mucosal'] != 1) & (top_grouped['ocular'] != 1),'cutaneous'] = 1
     
     top_grouped['ocular'] = top_grouped[melanoma_ocular].any(axis=1).astype(int)
     top_grouped['in_situ'] = top_grouped[melanoma_in_situ].any(axis=1).astype(int)
@@ -1017,7 +1054,7 @@ def transform_annot_df(annot_df,include_no_top_annot=True,binary_classification 
                     'Nevoid melanoma':1,
                     'Melanoma in situ': 0,
                     'Residual cancer noted':1, #Might want this to be 0
-                   'Lentigo maligna melanoma': 1,
+                   'Lentigo maligna melanoma': 0, #Updated 3-05-2025
                     'Desmoplastic melanoma':1,
                    'Nodular melanoma':1,
                     'Needs further review': 1,

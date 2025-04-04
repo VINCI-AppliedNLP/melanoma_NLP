@@ -1,0 +1,21 @@
+doc_id,Topography,Topography_start_span,Topography_end_span,skin_topography_present,breslow_depth_mm,clark_level,metastasis,metastasis_historical,metastasis_negated,metastasis_hypothetical,metastasis_is_possible_existence,nonskin_melanoma_dx,deep_margin_involvement,unspecific_or_uncertain_margin_involvement,deep_margin_involvement_negated,non_melanoma_transection,depth_greater_than_breslow_measurement,ulceration_status,Mitotic_index,pending,cutaneous,epithelioid,spitzoid,acral,amelanotic,choroidal,mucosal,hutchinsons_melanotic_freckle,balloon_cell,melanoma_unspecified,letiginous,lentigo_maligna,in_situ,nodular,superficial_spreading,spindle_cell,melanoma_not_otherwise_specified,nevoid,ocular,desmoplastic,melanoma_negated,melanoma_hypothetical,melanoma_is_possible_existence,melanoma_historical,cancer_negated,non_melanoma_dx,cancer_unspecified,non_melanoma_dx_negated,cancer_unspecified_negated,non_melanoma_dx_historical,cancer_unspecified_historical,non_melanoma_dx_hypothetical,cancer_unspecified_hypothetical,non_melanoma_dx_is_possible_existence,cancer_unspecified_is_possible_existence
+4,,,,0,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,,,,0,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,"Specimen: Skin biopsy, left hand.",0,34,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+3,"Specimen: Skin biopsy, right calf.",0,35,1,3.0,,0,0,0,0,0,0,0,0,0,0,0,,,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,"Specimen: Skin biopsy, right cheek.",0,36,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+6,"Specimen: Skin biopsy, left cheek.",0,35,1,2.0,,0,0,0,0,0,0,0,0,0,0,0,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,"Specimen: Skin biopsy, left forearm.",0,37,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+8,"Specimen: Skin biopsy, upper back.",0,35,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+9,"Specimen: Skin biopsy, chest.",0,30,1,1.2,,0,0,0,0,0,0,0,0,0,0,0,,,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,"Specimen: Skin biopsy, left thigh.",0,35,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,"Specimen: Skin biopsy, upper arm.",0,34,1,1.5,,0,0,0,0,0,0,0,0,0,0,0,absent,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,"Specimen: Skin biopsy, right wrist.",0,36,1,,,0,0,0,0,0,0,0,0,1,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,"Specimen: Skin biopsy, neck.",0,29,1,4.0,,0,0,0,0,0,0,0,0,0,0,0,present,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,"Specimen: Skin biopsy, abdomen.",0,32,1,2.5,,0,0,0,0,0,0,0,0,0,0,0,present,,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,"Specimen: Skin biopsy, thigh.",0,30,1,1.8,,0,0,0,0,0,0,0,0,0,0,0,,5.0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,"Specimen: Skin biopsy, back.",0,29,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+17,"Specimen: Skin biopsy, lower leg.",0,34,1,5.2,,0,0,0,0,0,0,0,0,0,0,0,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,"Specimen: Skin biopsy, scalp.",0,30,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+19,"Specimen: Skin biopsy, dorsal hand.",0,36,1,,,0,0,0,0,0,0,0,0,0,0,0,,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+20,"Specimen: Skin biopsy, right shoulder.",0,39,1,0.7,,0,0,0,0,0,0,0,0,0,0,0,,,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

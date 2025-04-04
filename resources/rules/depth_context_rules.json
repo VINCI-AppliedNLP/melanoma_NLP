@@ -1,99 +1,9 @@
 {
     "context_rules": [
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
-            "pattern": [
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "THICKNESS",
-                                "DEPTH"
-                            ]
-                        }
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "*"
-                }
-            ],
+            "category": "DEPTH_NO_VALUE",
             "literal": "Thickness",
-            "max_scope": 80,
-            "category": "DEPTH_NO_VALUE"
-        },
-        {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
             "pattern": [
-                {
-                    "_": {
-                        "concept_tag": "BRESLOW"
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": ")",
-                    "OP": "?"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
                 {
                     "_": {
                         "concept_tag": {
@@ -103,7 +13,7 @@
                             ]
                         }
                     },
-                    "OP": "*"
+                    "OP": "+"
                 },
                 {
                     "TEXT": {
@@ -130,14 +40,60 @@
                     "OP": "*"
                 }
             ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 80,
+            "max_targets": 1
+        },
+        {
+            "category": "MELANOMA_DEPTH_NO_VALUE",
             "literal": "Breslow Thickness",
-            "max_scope": 80,
-            "category": "MELANOMA_DEPTH_NO_VALUE"
-        },
-        {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
             "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
                 {
                     "_": {
                         "concept_tag": {
@@ -147,7 +103,7 @@
                             ]
                         }
                     },
-                    "OP": "+"
+                    "OP": "*"
                 },
                 {
                     "TEXT": {
@@ -172,143 +128,15 @@
                         "concept_tag": "INVASION"
                     },
                     "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "NOT_IN": [
-                                "IGNORE",
-                                "NEWLINE",
-                                "ULCERATION"
-                            ]
-                        }
-                    },
-                    "OP": "{,3}"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "UNIT"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "NOT_IN": [
-                                "IGNORE",
-                                "NEWLINE",
-                                "ULCERATION"
-                            ]
-                        }
-                    },
-                    "OP": "{,5}"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "VALUE"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "NOT_IN": [
-                                "IGNORE",
-                                "NEWLINE",
-                                "ULCERATION"
-                            ]
-                        }
-                    },
-                    "OP": "{,2}"
-                },
-                {
-                    "_": {
-                        "concept_tag": "UNIT"
-                    }
                 }
             ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 80,
+            "max_targets": 1
+        },
+        {
+            "category": "DEPTH",
             "literal": "Thickness,value unit, no tail",
-            "max_scope": 80,
-            "category": "DEPTH"
-        },
-        {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
             "pattern": [
                 {
                     "_": {
@@ -376,27 +204,10 @@
                     "OP": "{,3}"
                 },
                 {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
                     "_": {
                         "concept_tag": "UNIT"
-                    }
+                    },
+                    "OP": "*"
                 },
                 {
                     "TEXT": {
@@ -429,24 +240,6 @@
                     "OP": "{,5}"
                 },
                 {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
                     "_": {
                         "concept_tag": {
                             "IN": [
@@ -456,29 +249,10 @@
                     }
                 },
                 {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
                     "_": {
                         "concept_tag": {
                             "NOT_IN": [
                                 "IGNORE",
-                                "NEWLINE",
                                 "ULCERATION"
                             ]
                         }
@@ -488,64 +262,17 @@
                 {
                     "_": {
                         "concept_tag": "UNIT"
-                    },
-                    "OP": "?"
+                    }
                 }
             ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 80,
+            "max_targets": 1
+        },
+        {
+            "category": "DEPTH",
             "literal": "Thickness, unit value, no tail",
-            "max_scope": 80,
-            "category": "DEPTH"
-        },
-        {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
             "pattern": [
-                {
-                    "_": {
-                        "concept_tag": "BRESLOW"
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": ")",
-                    "OP": "?"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
                 {
                     "_": {
                         "concept_tag": {
@@ -555,7 +282,7 @@
                             ]
                         }
                     },
-                    "OP": "*"
+                    "OP": "+"
                 },
                 {
                     "TEXT": {
@@ -632,26 +359,7 @@
                 {
                     "_": {
                         "concept_tag": "UNIT"
-                    },
-                    "OP": "?"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
+                    }
                 },
                 {
                     "_": {
@@ -664,24 +372,6 @@
                         }
                     },
                     "OP": "{,5}"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
                 },
                 {
                     "_": {
@@ -725,16 +415,216 @@
                 {
                     "_": {
                         "concept_tag": "UNIT"
-                    }
+                    },
+                    "OP": "?"
                 }
             ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 80,
+            "max_targets": 1
+        },
+        {
+            "category": "MELANOMA_DEPTH",
             "literal": "Breslow Thickness, value unit, no tail",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BRESLOW"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "THICKNESS",
+                                "DEPTH"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "NEWLINE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,5}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE",
+                                "ULCERATION"
+                            ]
+                        }
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "MELANOMA_DEPTH",
+            "literal": "Breslow Thickness,unit value, no tail",
             "pattern": [
                 {
                     "_": {
@@ -928,24 +818,6 @@
                     }
                 },
                 {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
                     "_": {
                         "concept_tag": {
                             "NOT_IN": [
@@ -964,13 +836,13 @@
                     "OP": "?"
                 }
             ],
-            "literal": "Breslow Thickness,unit value, no tail",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "Thickness,value_unit, no tail ",
             "pattern": [
                 {
                     "_": {
@@ -1119,13 +991,13 @@
                     }
                 }
             ],
-            "literal": "Thickness,value_unit, no tail ",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "MELANOMA_DEPTH",
+            "literal": "Breslow Thickness, value_unit, no tail ",
             "pattern": [
                 {
                     "_": {
@@ -1320,13 +1192,13 @@
                     }
                 }
             ],
-            "literal": "Breslow Thickness, value_unit, no tail ",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "unit value, In thickness",
             "pattern": [
                 {
                     "_": {
@@ -1393,13 +1265,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "unit value, In thickness",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "value unit, In thickness",
             "pattern": [
                 {
                     "_": {
@@ -1447,13 +1319,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "value unit, In thickness",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "value_unit, In thickness",
             "pattern": [
                 {
                     "_": {
@@ -1520,13 +1392,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "value_unit, In thickness",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "value unit Thick",
             "pattern": [
                 {
                     "_": {
@@ -1566,13 +1438,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "value unit Thick",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "value_unit Thick",
             "pattern": [
                 {
                     "_": {
@@ -1604,13 +1476,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "value_unit Thick",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "Thickness",
             "pattern": [
                 {
                     "_": {
@@ -1881,13 +1753,13 @@
                     "OP": "?"
                 }
             ],
-            "literal": "Thickness",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "MELANOMA_DEPTH",
+            "literal": "Breslow Thickness",
             "pattern": [
                 {
                     "_": {
@@ -2243,107 +2115,107 @@
                     "OP": "?"
                 }
             ],
-            "literal": "Breslow Thickness",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
-            "pattern": [
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "TUMOR",
-                                "SAMPLE",
-                                "MELANOMA"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "VALUE"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "UNIT"
-                    }
-                }
-            ],
+            "category": "DEPTH",
             "literal": "tumor invades to value unit",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TUMOR",
+                                "SAMPLE",
+                                "MELANOMA"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "tumor invades to value_unit",
             "pattern": [
                 {
                     "_": {
@@ -2408,102 +2280,102 @@
                     }
                 }
             ],
-            "literal": "tumor invades to value_unit",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
-            "pattern": [
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "VALUE"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "UNIT"
-                    }
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "*"
-                }
-            ],
+            "category": "MELANOMA_DEPTH",
             "literal": "Clark invasion value unit",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNIT"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "MELANOMA_DEPTH",
+            "literal": "Clark value unit invasion",
             "pattern": [
                 {
                     "_": {
@@ -2526,79 +2398,79 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Clark value unit invasion",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
-            "pattern": [
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "+"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": {
-                            "IN": [
-                                "VALUE_UNIT"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "TEXT": {
-                        "REGEX": "^[^\\S\\n]+$"
-                    },
-                    "OP": "*"
-                },
-                {
-                    "_": {
-                        "concept_tag": "INVASION"
-                    },
-                    "OP": "*"
-                }
-            ],
+            "category": "MELANOMA_DEPTH",
             "literal": "Clark invasion value_unit",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "INVASION"
+                    },
+                    "OP": "*"
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "MELANOMA_DEPTH",
+            "literal": "Clark value_unit invasion",
             "pattern": [
                 {
                     "_": {
@@ -2634,13 +2506,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Clark value_unit invasion",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "MELANOMA_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "UNCERTAIN_MEASUREMENT",
+            "literal": "mostly template",
             "pattern": [
                 {
                     "_": {
@@ -2649,13 +2521,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "mostly template",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "UNCERTAIN_MEASUREMENT"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "UNCERTAIN_NO_MEASUREMENT",
+            "literal": "Uncertain",
             "pattern": [
                 {
                     "_": {
@@ -2747,13 +2619,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Uncertain",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "UNCERTAIN_NO_MEASUREMENT"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "UNCERTAIN_NO_MEASUREMENT",
+            "literal": "Uncertain",
             "pattern": [
                 {
                     "_": {
@@ -2891,13 +2763,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Uncertain",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "UNCERTAIN_NO_MEASUREMENT"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "NOT_APPLICABLE",
+            "literal": "Not applicable",
             "pattern": [
                 {
                     "_": {
@@ -2989,13 +2861,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Not applicable",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "NOT_APPLICABLE"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "NOT_APPLICABLE",
+            "literal": "Not applicable",
             "pattern": [
                 {
                     "_": {
@@ -3133,13 +3005,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "Not applicable",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "NOT_APPLICABLE"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "NOT_MEASURED",
+            "literal": "not measured",
             "pattern": [
                 {
                     "_": {
@@ -3231,13 +3103,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "not measured",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "NOT_MEASURED"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "NOT_MEASURED",
+            "literal": "not measured",
             "pattern": [
                 {
                     "_": {
@@ -3375,13 +3247,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "not measured",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "NOT_MEASURED"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "tumor value unit",
             "pattern": [
                 {
                     "_": {
@@ -3469,13 +3341,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "tumor value unit",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "DEPTH",
+            "literal": "tumor value unit",
             "pattern": [
                 {
                     "LOWER": {
@@ -3483,13 +3355,13 @@
                     }
                 }
             ],
-            "literal": "tumor value unit",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "CLARK_DEPTH",
+            "literal": "clark level",
             "pattern": [
                 {
                     "_": {
@@ -3498,13 +3370,13 @@
                     "OP": "+"
                 }
             ],
-            "literal": "clark level",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "CLARK_DEPTH"
+            "max_targets": 1
         },
         {
-            "max_targets": 1,
-            "direction": "BIDIRECTIONAL",
+            "category": "CLARK_DEPTH",
+            "literal": "clark level short",
             "pattern": [
                 {
                     "_": {
@@ -3513,9 +3385,9 @@
                     "OP": "+"
                 }
             ],
-            "literal": "clark level short",
+            "direction": "BIDIRECTIONAL",
             "max_scope": 80,
-            "category": "CLARK_DEPTH"
+            "max_targets": 1
         }
     ]
 }
