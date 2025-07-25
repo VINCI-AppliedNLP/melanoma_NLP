@@ -3,10 +3,10 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10  # Ensure compatibility with medspacy and spacy
+  - python=3.9  # Ensure compatibility with medspacy and spacy
   - pandas
   - numpy
-  - spacy=3.7.5
+  - spacy=3.5.4
   - ipython
   - regex
   - jsonschema  # Required for working with JSON validation
@@ -14,4 +14,4 @@ dependencies:
   - scikit-learn 
   - pip
   - pip:
-      - medspacy==1.3.1  # Install medspacy from pip 
+      - medspacy==1.2.0  # Install medspacy from pip 
