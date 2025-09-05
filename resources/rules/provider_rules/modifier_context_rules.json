@@ -1,0 +1,4399 @@
+{
+    "context_rules": [
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "neither"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "identified"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not identified"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "identified"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not identified"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not applicable"
+        },
+        {
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "TYPE"
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HISTOLOGY_TYPE",
+            "literal": "Histology_group5"
+        },
+        {
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "TYPE"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "HISTOLOGY_TERM"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "HISTOLOGY_TERM",
+                                "CONJ",
+                                "MELANOMA"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HISTOLOGY_TYPE",
+            "literal": "Histology_group5"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "absence of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "adequate",
+                            "sufficient"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "him",
+                            "her",
+                            "them",
+                            "patient",
+                            "pt"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "adequate to rule out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "adequate",
+                            "sufficient"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "adequate to rule the patient out"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "any other"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "are",
+                            "is",
+                            "was"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "are ruled out"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "as needed"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "as well as any"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "aunt",
+                            "aunts",
+                            "brother",
+                            "brothers",
+                            "child",
+                            "children",
+                            "cousin",
+                            "cousins",
+                            "dad",
+                            "dads",
+                            "daughter",
+                            "daughters",
+                            "fam",
+                            "family",
+                            "families",
+                            "father",
+                            "fathers",
+                            "grandchild",
+                            "grandchildren",
+                            "granddaughter",
+                            "granddaughters",
+                            "grandfather",
+                            "grandfathers",
+                            "grandmother",
+                            "grandmothers",
+                            "grandparent",
+                            "grandparents",
+                            "grandson",
+                            "grandsons",
+                            "husband",
+                            "mom",
+                            "moms",
+                            "mother",
+                            "mothers",
+                            "nephew",
+                            "nephews",
+                            "niece",
+                            "nieces",
+                            "parent",
+                            "parents",
+                            "partner",
+                            "sibling",
+                            "siblings",
+                            "sister",
+                            "sisters",
+                            "son",
+                            "sons",
+                            "spouse",
+                            "uncle",
+                            "uncles",
+                            "wife"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "'s",
+                            "'"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "FAMILY",
+            "literal": "family"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "risks of",
+                            "risk of"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "risks of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "can",
+                            "did"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "him",
+                            "her",
+                            "them",
+                            "patient",
+                            "pt"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "can rule out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "can",
+                            "did"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "can rule the patient out"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "checked for"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "clear of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "come"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "back"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "to"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "come back for"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "concerned",
+                            "concerning"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "about"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "concerned about"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "decline",
+                            "declined",
+                            "declines",
+                            "declining"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "decline"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "deny",
+                            "denied",
+                            "denies",
+                            "denying"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "deny"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "did",
+                            "could"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "did not rule out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "does",
+                            "did"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "look"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "like"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "does not look like"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "doubt"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "evaluate for"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "fails to reveal"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "free"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "free of"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "has been negative"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "has",
+                            "have"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "been"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "has been ruled out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "history",
+                            "hx",
+                            "hist",
+                            "ho"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HISTORICAL",
+            "literal": "history"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HISTORICAL",
+            "literal": "h/o"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "if"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "inconsistent with"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "lack of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "lacked",
+                            "lacking"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "lacked"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "may",
+                            "might",
+                            "must",
+                            "should",
+                            "will",
+                            "could",
+                            "can"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "may be ruled out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "may",
+                            "might",
+                            "must",
+                            "should",
+                            "will",
+                            "could",
+                            "can"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "for"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "may be ruled out for"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "may",
+                            "might"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "might be"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "negative",
+                            "neg"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "for"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "negative for"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "never"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "developed",
+                            "had"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "never had"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "abnormal",
+                            "new"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "history",
+                            "findings",
+                            "complaints",
+                            "sign",
+                            "signs",
+                            "suggestion"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no cause of"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no findings to indicate"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no longer present"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "new",
+                            "other"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "mammographic",
+                            "radiographic"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "evidence"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no evidence"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "significant",
+                            "suspicious"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "no significant"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "significant",
+                            "suspicious"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not significant"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "non diagnostic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "associated"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "with"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not associated with"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "been",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "not ruled out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "complain",
+                            "know"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not complain of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "have"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "evidence"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not have evidence of"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "known"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "have"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not known to have"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not to be"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "now resolved"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "is",
+                            "ought"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ruled"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "against"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "is to be ruled out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "past"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "medical",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "history"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HISTORICAL",
+            "literal": "past history"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "was",
+                            "is"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "patient was not"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "poss",
+                            "possible",
+                            "probably",
+                            "likely"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "possible"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "prophylaxis"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "r/o"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "rather than"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "resolved"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "return"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "ro"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "may",
+                            "might",
+                            "must",
+                            "should",
+                            "will",
+                            "could"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "him",
+                            "her",
+                            "them",
+                            "patient",
+                            "pt"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "rule out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "may",
+                            "might",
+                            "must",
+                            "should",
+                            "will",
+                            "could"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "rule the patient out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "ruled",
+                            "rules"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "him",
+                            "her",
+                            "them",
+                            "patient",
+                            "pt"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "ruled out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "ruled",
+                            "rules"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "ruled the patient out"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "should"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "she",
+                            "he",
+                            "they",
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "should he"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "should"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patient",
+                            "pt"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "should the patient"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "should there"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "suggestive of"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "suspicious for"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "test for"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "to exclude"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "unlikely"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "unremarkable for"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "was",
+                            "is",
+                            "are"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "negative",
+                            "neg"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "was negative"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "was",
+                            "is",
+                            "are",
+                            "can"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "was not"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "what must be ruled out is"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "with no"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "without"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "without"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "any",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "evidence",
+                            "indication",
+                            "sign"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "without any evidence of"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "worrisome for"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "worried about"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": ": none"
+        },
+        {
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": ": no"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "are not evident"
+        },
+        {
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "negative on"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "vs",
+                            "vs.",
+                            "versus"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "versus"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "fail"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "reveal"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "fail to reveal"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "are",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "negative"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "for"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "negative for"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "prior"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SAMPLE",
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 80,
+            "max_targets": 10,
+            "category": "HISTORICAL",
+            "literal": "prior biopsy"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "prior"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "SAMPLE",
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "LOWER": "site"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 80,
+            "max_targets": 10,
+            "category": "IGNORE",
+            "literal": "prior biopsy site"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "distinct"
+                },
+                {
+                    "LOWER": "from"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 8,
+            "max_targets": 1,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "distinct from"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "LOWER": "excluded"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 8,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "cannot be excluded"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 8,
+            "max_targets": 1,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "could represent"
+        },
+        {
+            "direction": "FORWARD",
+            "max_scope": 200,
+            "max_targets": 5,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "comment"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "not otherwise specified"
+                            ]
+                        }
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "n't"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "appear",
+                            "appreciate",
+                            "demonstrate",
+                            "exhibit",
+                            "feel",
+                            "had",
+                            "have",
+                            "reveal",
+                            "see"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "not"
+        },
+        {
+            "pattern": [
+                {
+                    "IS_SPACE": true
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "[",
+                            "("
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "]",
+                            ")"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 15,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "\n[]"
+        },
+        {
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "risk"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "educated",
+                            "education"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "educated"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": ":"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "LOWER": "none"
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "educated"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": ":"
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "ABSENT_AFTER"
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 6,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": ": absent"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "abcde",
+                            "abcdes",
+                            "review",
+                            "reviewed"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "review"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "fh"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            ":",
+                            "\n"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 100,
+            "max_targets": 4,
+            "category": "FAMILY",
+            "literal": "family"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "ajcc",
+                            "guideline",
+                            "staging"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 200,
+            "max_targets": 5,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "generic staging info"
+        },
+        {
+            "pattern": [
+                {
+                    "IS_SPACE": true
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "[",
+                            "("
+                        ]
+                    }
+                },
+                {
+                    "IS_SPACE": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "IN": [
+                            "]",
+                            ")"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 40,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": "[]"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patients",
+                            "individuals",
+                            "cases"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 200,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "generic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "patients",
+                            "individuals",
+                            "cases"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "generic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "mutation"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 200,
+            "max_targets": 5,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "generic staging info"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "LOWER": "be"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 10,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "can be"
+        },
+        {
+            "pattern": [
+                {
+                    "IS_SPACE": true
+                },
+                {
+                    "LOWER": "note"
+                },
+                {
+                    "TEXT": ":"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 150,
+            "max_targets": 5,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "note:"
+        },
+        {
+            "pattern": [
+                {
+                    "TEXT": "\n"
+                },
+                {
+                    "TEXT": "*"
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 50,
+            "max_targets": 5,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "comment"
+        },
+        {
+            "pattern": [
+                {
+                    "TEXT": ":"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "zero",
+                            "0"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BACKWARD",
+            "max_scope": 15,
+            "max_targets": 2,
+            "category": "NEGATED_EXISTENCE",
+            "literal": ":0"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "advised",
+                            "advise",
+                            "advice",
+                            "adviced"
+                        ]
+                    }
+                }
+            ],
+            "direction": "FORWARD",
+            "max_scope": 15,
+            "max_targets": 2,
+            "category": "HYPOTHETICAL",
+            "literal": "advised"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "board",
+                            "conference"
+                        ]
+                    }
+                }
+            ],
+            "direction": "BIDIRECTIONAL",
+            "max_scope": 8,
+            "max_targets": 2,
+            "category": "POSSIBLE_EXISTENCE",
+            "literal": "generic staging info"
+        }
+    ]
+}

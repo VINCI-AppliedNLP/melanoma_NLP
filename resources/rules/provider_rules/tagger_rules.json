@@ -1,0 +1,6163 @@
+{
+    "target_rules": [
+        {
+            "literal": "neck",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "extremity",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ear",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "lip",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ear canal",
+            "pattern": [
+                {
+                    "LOWER": "ear"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "canal"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "shoulder",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "axilla",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "axillary",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "scalp",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "heel",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "toe",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "inguinal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "forehead",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "head",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "elbow",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "forearm",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "preauricular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "periauricular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "face",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "trunk",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "thigh",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "temple",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "abdomen",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "abdominal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "postauricular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "preauricle",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "cheek",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "nose",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "zygoma",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "chest",
+            "pattern": [
+                {
+                    "LOWER": "chest"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "wall",
+                    "OP": "?"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "arm",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "uveal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "uvea",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "deltoid",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "scapular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "scapula",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "facial",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ankle",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "jaw",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "chin",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "flank",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "leg",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "nasal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "nasal bridge",
+            "pattern": [
+                {
+                    "LOWER": "nasal"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "bridge"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "eye",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "supratip",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "supranasal tip",
+            "pattern": [
+                {
+                    "LOWER": "supranasal"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "tip",
+                    "OP": "?"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "occipital",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "buttock",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "groin",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "parotid",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "gland",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "pectoralis",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "limb",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "shin",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "eyelid",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "hip",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "fossa",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "breast",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "clavicle",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "paraspinal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ischium",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "tonsillar",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "penis",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "tympanic",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "wrist",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "earlobe",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "forefoot",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "stomach",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "parietooccipital",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ear parts",
+            "pattern": [
+                {
+                    "LOWER": "ear"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "lobule",
+                            "helix"
+                        ]
+                    }
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "finger",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "abd",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "nares",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "antecubital",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "popliteal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "submandibular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "canthus",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "thorax",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "trapezius",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "clavicle",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "rectum",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ala",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "ring",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "orbit",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "auricular",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "paraspinal",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "penile",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "shldr",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "helix",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "torso",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "site unspecified",
+            "pattern": [
+                {
+                    "LOWER": "site"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "unspecified"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "site not stated",
+            "pattern": [
+                {
+                    "LOWER": "site"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "stated"
+                }
+            ],
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "foot",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "hairline",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "genitalia",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "hand",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "back",
+            "category": "ANATOMY"
+        },
+        {
+            "literal": "lymph",
+            "pattern": [
+                {
+                    "LOWER": "lymph"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "nodes",
+                            "node"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "sentinel lymph",
+            "pattern": [
+                {
+                    "LOWER": "sentinel"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "lymph"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "nodes",
+                            "node"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "sentinel node",
+            "pattern": [
+                {
+                    "LOWER": "sentinel"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "nodes",
+                            "node"
+                        ]
+                    }
+                }
+            ],
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "sln",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "hepatic flexure",
+            "pattern": [
+                {
+                    "LOWER": "hepatic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "flexure"
+                }
+            ],
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "gallbladder",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "liver",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "lung",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "thyroid",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "cecum",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "duodenum",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "renal",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "colon",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "ascending",
+                            "descending",
+                            "sigmoid"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "colon"
+                }
+            ],
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "branch",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "prostate",
+            "category": "ANATOMY_NONSKIN"
+        },
+        {
+            "literal": "pharyngeal wall",
+            "pattern": [
+                {
+                    "LOWER": "pharyngeal"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "wall"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "area",
+            "category": "AREA"
+        },
+        {
+            "literal": "benign",
+            "category": "BENIGN"
+        },
+        {
+            "literal": "classified",
+            "category": "CLASSIFIED"
+        },
+        {
+            "literal": "designated",
+            "pattern": [
+                {
+                    "LOWER": "designated"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "from",
+                    "OP": "?"
+                }
+            ],
+            "category": "DESIGNATED"
+        },
+        {
+            "literal": "desmoplastic",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "desmoplastic"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "in situ",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "in situ"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "nos",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "not otherwise specified"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "nevoid",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "nevoid"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "spindle",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "spindle cell"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "spitzoid",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "spitzoid"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "superficial spreading",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "superficial spreading"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "letiginous",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "letiginous"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "acral",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "acral"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "nodular",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "nodular"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "epithelioid",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "epithelioid"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "amelanotic",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "amelanotic"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "choroidal",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "choroidal"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "mucosal",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "mucosal"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "ocular",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "ocular"
+                    }
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "hutchinson's melanotic freckle",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "hutchinson's melanotic freckle"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "balloon cell",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "balloon cell"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "minimal deviation",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "minimal deviation"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "CANCER_DESCRIPTOR"
+        },
+        {
+            "literal": "lentigo maligna",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "lentigo maligna"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "HISTOLOGY_TERM"
+        },
+        {
+            "literal": "invasive",
+            "category": "INVASIVE"
+        },
+        {
+            "literal": "frontal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "front",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "temporal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "lateral",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "side",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "lat",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "right",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "left",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "l",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "pre-",
+            "pattern": [
+                {
+                    "LOWER": "pre"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "-",
+                    "OP": "?"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "r",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "rt",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "lt",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "postr",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "mid",
+            "pattern": [
+                {
+                    "LOWER": "mid"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "-",
+                    "OP": "?"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "lower",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "under",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "behind",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "abscess",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "above",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "deep",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "posterior",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "upper",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "superior",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "central",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "inferior",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "dorsal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "anterior",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "medial",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "subcutaneous",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "surface",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "radial",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "distal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "inner",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "parieto",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "parietal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "middle",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "base of",
+            "pattern": [
+                {
+                    "LOWER": "base"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "tail of",
+            "pattern": [
+                {
+                    "LOWER": "tail"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "tip",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "proximal",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "lobe",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "external",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "midline",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "vertex",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "top",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "plantar",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "bottom",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "bilateral",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "post-",
+            "pattern": [
+                {
+                    "LOWER": "post"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "-",
+                    "OP": "?"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "apex",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "melanoma site",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MELANOMA"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "site"
+                }
+            ],
+            "category": "LOCATION"
+        },
+        {
+            "literal": "malignancy",
+            "category": "MALIGNANCY"
+        },
+        {
+            "literal": "malignant-recurrent-residual",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "malignant",
+                                "residual",
+                                "recurrent"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "CANCER_DESCRIPTOR"
+        },
+        {
+            "literal": "Node",
+            "category": "NODE"
+        },
+        {
+            "literal": "Basal Cell Carcinoma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "Basal Cell Carcinoma"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "Squamous cell carcinoma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "Squamous cell carcinoma"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "actinic keratosis",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "actinic keratosis"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "bowen's disease",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "bowen's disease"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "carcinoma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "carcinoma"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "cyst",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "cyst"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "lentigo simplex",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "lentigo simplex"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "nevus",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "nevus"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "acrochordon",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "acrochordon"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "skin tag",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "skin tag"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "dermatitis",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "dermatitis"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "scar",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "scar"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "fibrosis",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "fibrosis"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "lymphocytosis",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "lymphocytosis"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "spongiosis",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "spongiosis"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "papilloma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "papilloma"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "polyp",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "polyp"
+                    }
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "pending",
+            "category": "PENDING"
+        },
+        {
+            "literal": "tissue",
+            "pattern": [
+                {
+                    "LOWER": "soft",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "tissue"
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "biopsy",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "needle",
+                            "shave",
+                            "punch",
+                            "core",
+                            "excisional",
+                            "cold"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "biopsy",
+                            "biopsies"
+                        ]
+                    }
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "biopsy",
+            "pattern": [
+                {
+                    "LOWER": "multiple"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "needle",
+                            "shave",
+                            "punch",
+                            "core",
+                            "excisional",
+                            "cold"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "biopsy",
+                            "biopsies"
+                        ]
+                    }
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "specimen",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "amputation",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "enucleation",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "excision",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "wide excision",
+            "pattern": [
+                {
+                    "LOWER": "wide"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "excision"
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "dissection",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "lesion",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "resection",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "turp",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "lymphadenectomy",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "segmental-wedge resection",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "segmental",
+                            "wedge"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "resection"
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "skin",
+            "pattern": [
+                {
+                    "LOWER": "skin"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "on"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "category": "SKIN"
+        },
+        {
+            "literal": "tumor",
+            "category": "TUMOR"
+        },
+        {
+            "literal": "mass",
+            "category": "TUMOR"
+        },
+        {
+            "literal": "cancer",
+            "category": "TUMOR"
+        },
+        {
+            "literal": "neoplasm",
+            "category": "TUMOR"
+        },
+        {
+            "literal": "type",
+            "category": "TYPE"
+        },
+        {
+            "literal": "unknown primary",
+            "pattern": [
+                {
+                    "LOWER": "primay"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "unknown"
+                }
+            ],
+            "category": "UNKNOWN_PRIMARY"
+        },
+        {
+            "literal": "CONJ",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            ",",
+                            ":",
+                            ";",
+                            "of",
+                            "\"",
+                            "and",
+                            "/",
+                            "is",
+                            "-",
+                            "at",
+                            "from",
+                            "(",
+                            ")",
+                            "selective",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "category": "CONJ"
+        },
+        {
+            "literal": "melanoma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MELANOMA"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "MELANOMA"
+        },
+        {
+            "literal": "metastatic",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "METASTASIS"
+                    }
+                }
+            ],
+            "category": "METASTASIS"
+        },
+        {
+            "literal": "measure",
+            "category": "MEASURE"
+        },
+        {
+            "literal": "measured",
+            "category": "MEASURE"
+        },
+        {
+            "literal": "measured to a",
+            "category": "MEASURE"
+        },
+        {
+            "literal": "measurement",
+            "category": "MEASURE"
+        },
+        {
+            "literal": "thick",
+            "category": "THICKNESS"
+        },
+        {
+            "literal": "thickness",
+            "category": "THICKNESS"
+        },
+        {
+            "literal": "in thickness",
+            "pattern": [
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "thickness"
+                }
+            ],
+            "category": "IN_THICKNESS"
+        },
+        {
+            "literal": "tumor thickness",
+            "pattern": [
+                {
+                    "LOWER": "tumor"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "thickness"
+                }
+            ],
+            "category": "THICKNESS"
+        },
+        {
+            "literal": "tumor thickness",
+            "pattern": [
+                {
+                    "LOWER": "maximum"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "tumor"
+                }
+            ],
+            "category": "THICKNESS"
+        },
+        {
+            "literal": "depth",
+            "category": "DEPTH"
+        },
+        {
+            "literal": "in depth",
+            "pattern": [
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "depth"
+                }
+            ],
+            "category": "IN_DEPTH"
+        },
+        {
+            "literal": "invasion",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invaded",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invade",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invades",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invades to",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invasion to a",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invasive to a",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invaded to a",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invade to a",
+            "category": "INVASION"
+        },
+        {
+            "literal": "of invasion",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invasion of",
+            "category": "INVASION"
+        },
+        {
+            "literal": "extends to",
+            "category": "INVASION"
+        },
+        {
+            "literal": "invasive",
+            "category": "INVASION"
+        },
+        {
+            "literal": "breslow",
+            "category": "BRESLOW"
+        },
+        {
+            "literal": "breslow's",
+            "category": "BRESLOW"
+        },
+        {
+            "literal": "breslows",
+            "category": "BRESLOW"
+        },
+        {
+            "literal": "breslow",
+            "category": "BRESLOW"
+        },
+        {
+            "literal": "Number",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+$"
+                    }
+                }
+            ],
+            "category": "VALUE"
+        },
+        {
+            "literal": "Number",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+mm$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT"
+        },
+        {
+            "literal": "Number",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+cm$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT"
+        },
+        {
+            "literal": "Number",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+millimeters?$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT"
+        },
+        {
+            "literal": "Number",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+centimeters?$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT"
+        },
+        {
+            "literal": "mm",
+            "category": "UNIT"
+        },
+        {
+            "literal": "cm",
+            "category": "UNIT"
+        },
+        {
+            "literal": "millimeter",
+            "category": "UNIT"
+        },
+        {
+            "literal": "millimeters",
+            "category": "UNIT"
+        },
+        {
+            "literal": "centimeter",
+            "category": "UNIT"
+        },
+        {
+            "literal": "centimeters",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(mm)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(cm)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(millimeter)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(millimeters)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(centimeter)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "(centimeters)",
+            "category": "UNIT"
+        },
+        {
+            "literal": "pT",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^p?t[0-4][a-d]?$"
+                    }
+                }
+            ],
+            "category": "T_STAGE"
+        },
+        {
+            "literal": "reexcision",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "re-excision",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "mitotic",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "size",
+            "category": "IGNORE"
+        },
+        {
+            "literal": ".",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "x",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "greater than",
+            "category": "GREATER"
+        },
+        {
+            "literal": "or greater",
+            "category": "GREATER"
+        },
+        {
+            "literal": "at least",
+            "category": "GREATER"
+        },
+        {
+            "literal": ">",
+            "category": "GREATER"
+        },
+        {
+            "literal": "or less",
+            "category": "LESSER"
+        },
+        {
+            "literal": "<",
+            "category": "LESSER"
+        },
+        {
+            "literal": "less than",
+            "category": "LESSER"
+        },
+        {
+            "literal": "maximum",
+            "category": "LESSER"
+        },
+        {
+            "literal": "Atypical melanocytes are seen in the superficial dermis at an approximate depth of 0.25 mm and in the deep dermis at an approximate depth of 1.01 mm",
+            "pattern": [
+                {
+                    "LOWER": "atypical"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanocytes"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "are"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "seen"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "superficial"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "dermis"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "at"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "an"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "approximate"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "depth"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "0.25"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "and"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "deep"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "dermis"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "at"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "an"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "approximate"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "depth"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "1.01"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm"
+                }
+            ],
+            "category": "TEMPLATE"
+        },
+        {
+            "literal": "invasion to a depth of <small_num> cannot be entirely excluded",
+            "pattern": [
+                {
+                    "LOWER": "invasion"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "a"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "depth"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "[0]*\\.[0-5](mm)?"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "entirely",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "excluded"
+                }
+            ],
+            "category": "UNCERTAIN_TEMPLATE"
+        },
+        {
+            "literal": "cannot exclude focal invasion <small_num> ",
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "exclude"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "focal",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "[0]*\\.[0-5](mm)?"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm",
+                    "OP": "?"
+                }
+            ],
+            "category": "UNCERTAIN_TEMPLATE"
+        },
+        {
+            "literal": "not applicable",
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "applicable"
+                }
+            ],
+            "category": "NOT_APPLICABLE"
+        },
+        {
+            "literal": "cannot be stated with absolute certainty",
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "stated"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "absolute"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "certainty"
+                }
+            ],
+            "category": "UNCERTAIN"
+        },
+        {
+            "literal": "may change",
+            "pattern": [
+                {
+                    "LOWER": "may"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "change"
+                }
+            ],
+            "category": "UNCERTAIN"
+        },
+        {
+            "literal": "not measured",
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "measured"
+                }
+            ],
+            "category": "NOT_MEASURED"
+        },
+        {
+            "literal": "superficially invasive",
+            "pattern": [
+                {
+                    "LOWER": "superficially"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasive"
+                }
+            ],
+            "category": "SUPERFICIAL"
+        },
+        {
+            "literal": "superficial biopsy limits interpretation",
+            "pattern": [
+                {
+                    "LOWER": "superficial"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "biopsy"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "limits"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "interpretation"
+                }
+            ],
+            "category": "SUPERFICIAL_BIOPSY"
+        },
+        {
+            "literal": "greater breslow thickness than current excision",
+            "pattern": [
+                {
+                    "LOWER": "greater"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "breslow"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "thickness"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "than"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "current"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "excision"
+                }
+            ],
+            "category": "GREATER_THAN_EXCISION"
+        },
+        {
+            "literal": "ulceration",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "focal",
+                            "with",
+                            "extensive",
+                            "surface"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ulceration"
+                }
+            ],
+            "category": "ULCERATION"
+        },
+        {
+            "literal": "ulceration:",
+            "category": "ULCERATION"
+        },
+        {
+            "literal": "ulcerated",
+            "category": "ULCERATED"
+        },
+        {
+            "literal": "ulceration",
+            "pattern": [
+                {
+                    "TEXT": "\"",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "ulceration"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "\"",
+                    "OP": "?"
+                }
+            ],
+            "category": "ULCERATION"
+        },
+        {
+            "literal": "absent",
+            "category": "ABSENT"
+        },
+        {
+            "literal": "not identified",
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "identified"
+                }
+            ],
+            "category": "ABSENT_AFTER"
+        },
+        {
+            "literal": "None identified",
+            "pattern": [
+                {
+                    "LOWER": "none"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "identified"
+                }
+            ],
+            "category": "ABSENT_AFTER"
+        },
+        {
+            "literal": "not present",
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "present"
+                }
+            ],
+            "category": "ABSENT_AFTER"
+        },
+        {
+            "literal": "none",
+            "category": "ABSENT_AFTER"
+        },
+        {
+            "literal": "no evidence of",
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "evidence"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "no significant",
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "significant"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "no",
+            "category": "ABSENT"
+        },
+        {
+            "literal": "not",
+            "category": "ABSENT"
+        },
+        {
+            "literal": "not an",
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "without",
+            "pattern": [
+                {
+                    "LOWER": "without"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "any",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "evidence",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "non-",
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "non-",
+            "pattern": [
+                {
+                    "LOWER": "non"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "-"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "neither",
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "absence of",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "absence",
+                            "free",
+                            "lack"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": "of"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "rule out for",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "rule",
+                            "ruled"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "against",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "no findings to indicate",
+            "pattern": [
+                {
+                    "LOWER": "no"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "findings"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "indicate"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "rule out",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "rule",
+                            "ruled"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "category": "ABSENT"
+        },
+        {
+            "literal": "with the lack of",
+            "pattern": [
+                {
+                    "LOWER": "with"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "lack"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "category": "IGNORE"
+        },
+        {
+            "literal": "negative",
+            "category": "ABSENT"
+        },
+        {
+            "literal": "negative for",
+            "pattern": [
+                {
+                    "LOWER": "negative"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "for"
+                }
+            ],
+            "category": "ABSENT_BEFORE"
+        },
+        {
+            "literal": "indeterminate",
+            "category": "INDETERMINATE"
+        },
+        {
+            "literal": "undetermined",
+            "category": "INDETERMINATE"
+        },
+        {
+            "literal": "unknown",
+            "category": "INDETERMINATE"
+        },
+        {
+            "literal": "suggestive of",
+            "pattern": [
+                {
+                    "LOWER": "suggestive"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "category": "INDETERMINATE"
+        },
+        {
+            "literal": "present",
+            "category": "PRESENT"
+        },
+        {
+            "literal": "yes",
+            "category": "PRESENT"
+        },
+        {
+            "literal": "impending",
+            "category": "IMPENDING"
+        },
+        {
+            "literal": "impending",
+            "category": "IMPENDING"
+        },
+        {
+            "literal": "unknown",
+            "category": "INDETERMINATE"
+        },
+        {
+            "literal": "MELANOCYTIC",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MELANOCYTIC"
+                    }
+                }
+            ],
+            "category": "MELANOCYTIC"
+        },
+        {
+            "literal": "level of invasion",
+            "pattern": [
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                }
+            ],
+            "category": "CLARK_SHORT"
+        },
+        {
+            "literal": "level of invasion excision",
+            "pattern": [
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "excision",
+                            "dissection",
+                            "biopsy",
+                            "resection"
+                        ]
+                    }
+                }
+            ],
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "level of invasion",
+            "pattern": [
+                {
+                    "LOWER": "lymph"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "node",
+                            "nodes"
+                        ]
+                    }
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                }
+            ],
+            "category": "IGNORE"
+        },
+        {
+            "literal": "level of invasion",
+            "pattern": [
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "dissection"
+                }
+            ],
+            "category": "IGNORE"
+        },
+        {
+            "literal": "Clark level",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "clark",
+                            "clarks",
+                            "anatomic",
+                            "clarke"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "at",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "least",
+                            "<",
+                            ">",
+                            "="
+                        ]
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                }
+            ],
+            "category": "CLARK"
+        },
+        {
+            "literal": "transect",
+            "category": "TRANSECT"
+        },
+        {
+            "literal": "transected",
+            "category": "TRANSECT"
+        },
+        {
+            "literal": "transection",
+            "category": "TRANSECT"
+        },
+        {
+            "literal": "transects",
+            "category": "TRANSECT"
+        },
+        {
+            "literal": "involved",
+            "category": "INVOLVED"
+        },
+        {
+            "literal": "involving",
+            "category": "INVOLVED_BEFORE"
+        },
+        {
+            "literal": "involves",
+            "category": "INVOLVED"
+        },
+        {
+            "literal": "involvement",
+            "category": "INVOLVED"
+        },
+        {
+            "literal": "present",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "seen"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "on",
+                            "at"
+                        ]
+                    }
+                }
+            ],
+            "category": "PRESENT"
+        },
+        {
+            "literal": "not present on",
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "seen"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "on",
+                            "at"
+                        ]
+                    }
+                }
+            ],
+            "category": "UNINVOLVED"
+        },
+        {
+            "literal": "positive",
+            "category": "POSITIVE"
+        },
+        {
+            "literal": "not positive/involved",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "not",
+                            "no"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "involved",
+                            "involvement",
+                            "involve",
+                            "involves"
+                        ]
+                    }
+                }
+            ],
+            "category": "UNINVOLVED"
+        },
+        {
+            "literal": "extending/invasion to",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "extending",
+                            "extend",
+                            "extends",
+                            "invasion"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "to",
+                            "into"
+                        ]
+                    }
+                }
+            ],
+            "category": "INVOLVED_BEFORE"
+        },
+        {
+            "literal": "margins",
+            "category": "MARGINS"
+        },
+        {
+            "literal": "margin",
+            "category": "MARGINS"
+        },
+        {
+            "literal": "edge",
+            "category": "MARGINS"
+        },
+        {
+            "literal": "base",
+            "category": "BASE"
+        },
+        {
+            "literal": "portion",
+            "category": "SAMPLE"
+        },
+        {
+            "literal": "mm.",
+            "category": "UNIT"
+        },
+        {
+            "literal": "cm.",
+            "category": "UNIT"
+        },
+        {
+            "literal": "level of invasion addition",
+            "pattern": [
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "clark",
+                            "clarks",
+                            "anatomic",
+                            "clarke"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "level",
+                    "OP": "?"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                }
+            ],
+            "category": "CLARK_SHORT"
+        },
+        {
+            "literal": "Clark level addition",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "clark",
+                            "clarks",
+                            "anatomic",
+                            "clarke"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "level"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "invasion",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": "(",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "clark",
+                            "clarks",
+                            "anatomic",
+                            "clarke"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "level",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": ")",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "at",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "least",
+                            "<",
+                            ">",
+                            "="
+                        ]
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "LOWER": {
+                        "REGEX": "^(i{1,4}|v|iv|[0-5])$"
+                    }
+                }
+            ],
+            "category": "CLARK"
+        },
+        {
+            "literal": "uninvolved",
+            "category": "UNINVOLVED"
+        },
+        {
+            "literal": "melanocytic hyperplasia",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "melanocytic_hyperplasia"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "category": "NOT_MELANOMA_DX"
+        },
+        {
+            "literal": "cannot rule out",
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "rule"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "out"
+                }
+            ],
+            "category": "UNCERTAIN_BEFORE"
+        },
+        {
+            "literal": "cannot be excluded",
+            "pattern": [
+                {
+                    "LOWER": "can"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "be"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "excluded",
+                            "assessed"
+                        ]
+                    }
+                }
+            ],
+            "category": "UNCERTAIN_AFTER"
+        },
+        {
+            "literal": "border",
+            "category": "MARGINS"
+        },
+        {
+            "literal": "borders",
+            "category": "MARGINS"
+        },
+        {
+            "literal": "\n",
+            "category": "NEWLINE"
+        },
+        {
+            "literal": "superficial",
+            "category": "LOCATION"
+        },
+        {
+            "literal": "melanoma marker",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "#",
+            "category": "IGNORE"
+        },
+        {
+            "literal": "BD",
+            "category": "DEPTH"
+        },
+        {
+            "literal": "melanoma",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "MELANOMA"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "of"
+                },
+                {
+                    "LOWER": "the"
+                },
+                {
+                    "LOWER": "skin"
+                }
+            ],
+            "category": "IGNORE"
+        },
+        {
+            "literal": "Tis",
+            "category": "T_STAGE"
+        }
+    ]
+}

@@ -1,0 +1,668 @@
+{
+    "context_rules": [
+        {
+            "max_scope": 10,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "METASTATIC",
+            "literal": "metastasis",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                }
+            ]
+        },
+        {
+            "max_scope": 10,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "NEGATED_METASTATIC",
+            "literal": "metastasis",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "n"
+                },
+                {
+                    "LOWER": "/"
+                },
+                {
+                    "LOWER": "a"
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 3,
+            "category": "NEGATED_METASTATIC",
+            "literal": "metastasis",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "METASTASIS"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "TUMOR"
+                    },
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "LOWER": "applicable"
+                }
+            ]
+        },
+        {
+            "max_scope": 80,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 2,
+            "category": "METASTATIC",
+            "literal": "consistent with metastasis",
+            "pattern": [
+                {
+                    "LOWER": "consistent"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "with",
+                            "w/"
+                        ]
+                    }
+                },
+                {
+                    "LOWER": "a",
+                    "OP": "?"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "LOWER": "process",
+                    "OP": "?"
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "METASTATIC",
+            "literal": "METASTASIS present",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "x",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": "PRESENT"
+                    }
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "NEGATED_METASTATIC",
+            "literal": "METASTASIS absent",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "is",
+                            "will"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "x",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_AFTER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "NEGATED_METASTATIC",
+            "literal": "absent METASTASIS",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "NOT_IN": [
+                                "IGNORE"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "NEGATED_METASTATIC",
+            "literal": "METASTASIS absent",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "is",
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "will",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "IS_PUNCT": true,
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_AFTER"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ]
+        },
+        {
+            "max_scope": 12,
+            "direction": "BIDIRECTIONAL",
+            "max_targets": 1,
+            "category": "NEGATED_METASTATIC",
+            "literal": "absent METASTASIS",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT",
+                                "ABSENT_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "METASTASIS"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ]
+        }
+    ]
+}

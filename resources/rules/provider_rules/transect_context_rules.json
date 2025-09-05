@@ -1,0 +1,2299 @@
+{
+    "context_rules": [
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "SUPERFICIAL"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "superficial invasion",
+            "max_scope": 80,
+            "category": "SUPERFICIALLY_INVASIVE"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "SUPERFICIAL_BIOPSY"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "superficial biopsy",
+            "max_scope": 80,
+            "category": "SUPERFICIAL_BIOPSY"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "GREATER_THAN_EXCISION"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "greater breslow thickness than excision",
+            "max_scope": 80,
+            "category": "GREATER_THAN_EXCISION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "deep transection",
+            "max_scope": 80,
+            "category": "DEEP_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "deep transection",
+            "max_scope": 80,
+            "category": "DEEP_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "deep transection",
+            "max_scope": 80,
+            "category": "DEEP_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED_BEFORE",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n",
+                            ","
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "pretag": "BASE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "deep transection",
+            "max_scope": 80,
+            "category": "DEEP_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "BASE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "deep transection",
+            "max_scope": 80,
+            "category": "DEEP_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "unspecified transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE",
+                                "INVOLVED_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "unspecified transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_BEFORE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain deep transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_AFTER"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain deep transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "DEEP",
+                                "BASE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MARGINS",
+                                "SAMPLE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_AFTER"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain deep transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_BEFORE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_BEFORE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_AFTER"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "INVOLVED_BEFORE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "PERIPHERAL",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "UNCERTAIN_AFTER"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "uncertain transection",
+            "max_scope": 80,
+            "category": "UNSPEC_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "PERIPHERAL"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "DEEP",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "PERIPHERAL_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "DEEP",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "pretag": "PERIPHERAL"
+                    }
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "PERIPHERAL_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "_": {
+                        "list_component": true
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "BASE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BASE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_BEFORE",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,1}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "_": {
+                        "pretag": "DEEP"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "BASE"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": "BASE"
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "NOT_IN": [
+                            ",",
+                            ".",
+                            ";",
+                            "\n",
+                            ":"
+                        ]
+                    },
+                    "OP": "{,4}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "MELANOMA",
+                                "TUMOR"
+                            ]
+                        }
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "ABSENT_AFTER",
+                                "ABSENT",
+                                "UNINVOLVED"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "_": {
+                        "concept_tag": {
+                            "IN": [
+                                "TRANSECT",
+                                "INVOLVED",
+                                "PRESENT",
+                                "POSITIVE"
+                            ]
+                        }
+                    },
+                    "OP": "+"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "DEEP",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "IN": [
+                                "VALUE",
+                                "VALUE_UNIT"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "_": {
+                        "pretag": {
+                            "NOT_IN": [
+                                "DEEP",
+                                "IGNORE",
+                                "NEWLINE"
+                            ]
+                        }
+                    },
+                    "OP": "{,3}"
+                },
+                {
+                    "_": {
+                        "concept_tag": "MARGINS"
+                    },
+                    "OP": "+"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        },
+        {
+            "max_targets": 1,
+            "direction": "BIDIRECTIONAL",
+            "pattern": [
+                {
+                    "LOWER": "completely"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "excised"
+                }
+            ],
+            "literal": "not deep transection",
+            "max_scope": 80,
+            "category": "NEGATED_TRANSECTION"
+        }
+    ]
+}

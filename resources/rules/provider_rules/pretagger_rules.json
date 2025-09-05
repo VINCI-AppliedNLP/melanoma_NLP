@@ -1,0 +1,1998 @@
+{
+    "target_rules": [
+        {
+            "category": "desmoplastic",
+            "literal": "desmoplastic"
+        },
+        {
+            "category": "desmoplastic",
+            "literal": "desomoplastic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "situ"
+                }
+            ],
+            "category": "in situ",
+            "literal": "in situ"
+        },
+        {
+            "category": "in situ",
+            "literal": "mis"
+        },
+        {
+            "category": "in situ",
+            "literal": "insitu"
+        },
+        {
+            "category": "not otherwise specified",
+            "literal": "nos"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "not"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "otherwise"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "specified",
+                            "classified"
+                        ]
+                    }
+                }
+            ],
+            "category": "not otherwise specified",
+            "literal": "nos"
+        },
+        {
+            "category": "not otherwise specified",
+            "literal": "other"
+        },
+        {
+            "category": "nevoid",
+            "literal": "nevoid"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "spindle"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "cell",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanoma",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "type",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "b"
+                        ]
+                    },
+                    "OP": "?"
+                }
+            ],
+            "category": "spindle cell",
+            "literal": "spindle"
+        },
+        {
+            "category": "spindle cell",
+            "literal": "spindled"
+        },
+        {
+            "category": "spitzoid",
+            "literal": "spitzoid"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "superficial"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "spreading"
+                }
+            ],
+            "category": "superficial spreading",
+            "literal": "superficial spreading"
+        },
+        {
+            "category": "letiginous",
+            "literal": "letiginous"
+        },
+        {
+            "category": "acral",
+            "literal": "acral"
+        },
+        {
+            "category": "nodular",
+            "literal": "nodular"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "epithelioid"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "and",
+                    "OP": "?"
+                }
+            ],
+            "category": "epithelioid",
+            "literal": "epithelioid"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "epitheloid"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "and",
+                    "OP": "?"
+                }
+            ],
+            "category": "epithelioid",
+            "literal": "epitheloid"
+        },
+        {
+            "category": "amelanotic",
+            "literal": "amelanotic"
+        },
+        {
+            "category": "choroidal",
+            "literal": "choroidal"
+        },
+        {
+            "category": "mucosal",
+            "literal": "mucosal"
+        },
+        {
+            "category": "ocular",
+            "literal": "ocular"
+        },
+        {
+            "category": "ocular",
+            "literal": "uveal"
+        },
+        {
+            "category": "in situ",
+            "literal": "precancerous melanosis"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "hutchinson"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "'s"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanotic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "freckle"
+                }
+            ],
+            "category": "hutchinson's melanotic freckle",
+            "literal": "hutchinson's melanotic freckle"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "balloon"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "cell"
+                }
+            ],
+            "category": "balloon cell",
+            "literal": "balloon cell"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "minimal"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "deviation"
+                }
+            ],
+            "category": "minimal deviation",
+            "literal": "minimal deviation"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "lentigo"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "maligna"
+                }
+            ],
+            "category": "lentigo maligna",
+            "literal": "lentigo maligna"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "basal"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "cell"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "carcinoma"
+                }
+            ],
+            "category": "Basal Cell Carcinoma",
+            "literal": "Basal Cell Carcinoma"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "squamous"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "cell"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "carcinoma"
+                }
+            ],
+            "category": "Squamous cell carcinoma",
+            "literal": "Squamous cell carcinoma"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "actinic",
+                            "seborrheic"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "keratosis",
+                            "parakeratosis",
+                            "hyperkeratosis"
+                        ]
+                    }
+                }
+            ],
+            "category": "actinic keratosis",
+            "literal": "actinic keratosis"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "bowen",
+                            "bowen's",
+                            "bowens"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "'s",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "disease",
+                    "OP": "?"
+                }
+            ],
+            "category": "bowen's disease",
+            "literal": "bowen's disease"
+        },
+        {
+            "category": "carcinoma",
+            "literal": "carcinoma"
+        },
+        {
+            "category": "cyst",
+            "literal": "cyst"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "lentigo"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "simplex"
+                }
+            ],
+            "category": "lentigo simplex",
+            "literal": "lentigo simplex"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "compound",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "nevus"
+                }
+            ],
+            "category": "nevus",
+            "literal": "nevus"
+        },
+        {
+            "category": "acrochordon",
+            "literal": "acrochordon"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "skin"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "tag"
+                }
+            ],
+            "category": "skin tag",
+            "literal": "skin tag"
+        },
+        {
+            "category": "dermatitis",
+            "literal": "dermatitis"
+        },
+        {
+            "category": "scar",
+            "literal": "scar"
+        },
+        {
+            "category": "fibrosis",
+            "literal": "fibrosis"
+        },
+        {
+            "category": "lymphocytosis",
+            "literal": "lymphocytosis"
+        },
+        {
+            "category": "spongiosis",
+            "literal": "spongiosis"
+        },
+        {
+            "category": "papilloma",
+            "literal": "papilloma"
+        },
+        {
+            "category": "polyp",
+            "literal": "polyp"
+        },
+        {
+            "category": "residual",
+            "literal": "residual"
+        },
+        {
+            "category": "recurrent",
+            "literal": "recurrent"
+        },
+        {
+            "category": "malignant",
+            "literal": "malignant"
+        },
+        {
+            "pattern": [
+                {
+                    "IS_ALPHA": true
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm"
+                }
+            ],
+            "category": "malignant",
+            "literal": "malignant melanoma"
+        },
+        {
+            "pattern": [
+                {
+                    "TEXT": "-"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "mm"
+                }
+            ],
+            "category": "malignant",
+            "literal": "malignant melanoma"
+        },
+        {
+            "category": "malignant",
+            "literal": "malig"
+        },
+        {
+            "category": "malignant",
+            "literal": "malignent"
+        },
+        {
+            "category": "malignant",
+            "literal": "malignanat"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "invasive",
+                            "intraepithelial"
+                        ]
+                    },
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "melanocytic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "neoplasia"
+                }
+            ],
+            "category": "MELANOMA",
+            "literal": "melanocytic neoplasia"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanoms"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanomas"
+        },
+        {
+            "category": "MELANOCYTIC",
+            "literal": "melanocytic"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "mealanoma"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "micrometastasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "micrometastatic"
+        },
+        {
+            "category": "DEEP",
+            "literal": "deep"
+        },
+        {
+            "category": "MITOTIC",
+            "literal": "mitotic"
+        },
+        {
+            "category": "MITOTIC",
+            "literal": "mitosis"
+        },
+        {
+            "category": "MITOTIC",
+            "literal": "mitoses"
+        },
+        {
+            "category": "INDEX",
+            "literal": "index"
+        },
+        {
+            "category": "INDEX",
+            "literal": "rate"
+        },
+        {
+            "category": "INDEX",
+            "literal": "grade"
+        },
+        {
+            "category": "UNIT",
+            "literal": "/"
+        },
+        {
+            "category": "UNIT",
+            "literal": "per"
+        },
+        {
+            "category": "UNIT",
+            "literal": "mm2"
+        },
+        {
+            "category": "UNIT",
+            "literal": "square"
+        },
+        {
+            "category": "UNIT",
+            "literal": "mm"
+        },
+        {
+            "category": "UNIT",
+            "literal": "millimeter"
+        },
+        {
+            "category": "UNIT",
+            "literal": "squared"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "greater"
+                },
+                {
+                    "LOWER": "than"
+                }
+            ],
+            "category": "GREATER",
+            "literal": "greater than"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "or"
+                },
+                {
+                    "LOWER": "greater"
+                }
+            ],
+            "category": "GREATER",
+            "literal": "or greater"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "at"
+                },
+                {
+                    "LOWER": "least"
+                }
+            ],
+            "category": "GREATER",
+            "literal": "at least"
+        },
+        {
+            "category": "GREATER",
+            "literal": ">"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "less"
+                },
+                {
+                    "LOWER": "than"
+                }
+            ],
+            "category": "LESSER",
+            "literal": "less than"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "or"
+                },
+                {
+                    "LOWER": "less"
+                }
+            ],
+            "category": "LESSER",
+            "literal": "or less"
+        },
+        {
+            "category": "LESSER",
+            "literal": "low"
+        },
+        {
+            "category": "LESSER",
+            "literal": "less"
+        },
+        {
+            "category": "LESSER",
+            "literal": "<"
+        },
+        {
+            "category": "TYPE",
+            "literal": "dermal"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+$"
+                    }
+                }
+            ],
+            "category": "VALUE",
+            "literal": "Number"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+mm$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT",
+            "literal": "Number"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+cm$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT",
+            "literal": "Number"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+millimeters?$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT",
+            "literal": "Number"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d]*\\.?\\d+centimeters?$"
+                    }
+                }
+            ],
+            "category": "VALUE_UNIT",
+            "literal": "Number"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen"
+                    }
+                }
+            ],
+            "category": "VALUE",
+            "literal": "Number"
+        },
+        {
+            "category": "RESULT",
+            "literal": "no"
+        },
+        {
+            "category": "RESULT",
+            "literal": "yes"
+        },
+        {
+            "category": "FIGURE",
+            "literal": "figure"
+        },
+        {
+            "category": "FIGURE",
+            "literal": "figures"
+        },
+        {
+            "category": "BE",
+            "literal": "is"
+        },
+        {
+            "category": "BE",
+            "literal": "are"
+        },
+        {
+            "category": "BE",
+            "literal": "be"
+        },
+        {
+            "category": "IDENTIFIED",
+            "literal": "seen"
+        },
+        {
+            "category": "IDENTIFIED",
+            "literal": "found"
+        },
+        {
+            "category": "UNIT",
+            "literal": "sq"
+        },
+        {
+            "category": "IDENTIFIED",
+            "literal": "identify"
+        },
+        {
+            "category": "IDENTIFIED",
+            "literal": "identified"
+        },
+        {
+            "category": "RESULT",
+            "literal": "not"
+        },
+        {
+            "category": "FIGURE",
+            "literal": "figure(s"
+        },
+        {
+            "category": "RESULT",
+            "literal": "none"
+        },
+        {
+            "category": "DEFER",
+            "literal": "defer"
+        },
+        {
+            "category": "RESULT",
+            "literal": "neither"
+        },
+        {
+            "category": "DERMAL",
+            "literal": "dermal"
+        },
+        {
+            "category": "INDEX",
+            "literal": "count"
+        },
+        {
+            "category": "GREATER",
+            "literal": "more than"
+        },
+        {
+            "category": "GREATER",
+            "literal": "more"
+        },
+        {
+            "category": "RESULT",
+            "literal": "absent"
+        },
+        {
+            "category": "RESULT",
+            "literal": "insignificant"
+        },
+        {
+            "category": "EQUAL",
+            "literal": "="
+        },
+        {
+            "category": "UNIT",
+            "literal": "hpf"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d+]*/\\d+$"
+                    }
+                }
+            ],
+            "category": "VALUE",
+            "literal": "Number"
+        },
+        {
+            "category": "UNIT",
+            "literal": "per one millimeter squared"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "dermal"
+                },
+                {
+                    "LOWER": "tumor"
+                }
+            ],
+            "category": "DERMAL",
+            "literal": "dermal tumor"
+        },
+        {
+            "category": "UNIT_VALUE",
+            "literal": "1mm2"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d+]*/\\d+hpg"
+                    }
+                }
+            ],
+            "category": "VALUE",
+            "literal": "7/10hpg"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "high"
+                },
+                {
+                    "LOWER": "power"
+                },
+                {
+                    "LOWER": "fields"
+                }
+            ],
+            "category": "UNIT",
+            "literal": "HIGH POWER FIELDS"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "dermal",
+                    "OP": "?"
+                },
+                {
+                    "LOWER": "proliferative"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "activity"
+                }
+            ],
+            "category": "MITOTIC",
+            "literal": "mitotic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "mitotic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "figures"
+                }
+            ],
+            "category": "MITOTIC",
+            "literal": "mitotic"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "more"
+                },
+                {
+                    "LOWER": "than"
+                }
+            ],
+            "category": "GREATER",
+            "literal": "more than"
+        },
+        {
+            "category": "RESULT",
+            "literal": "absent"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "lateral",
+                            "peripheral",
+                            "proximal",
+                            "radial",
+                            "horizontal",
+                            "side",
+                            "medial",
+                            "epidermal",
+                            "superior",
+                            "o'clock"
+                        ]
+                    }
+                }
+            ],
+            "category": "PERIPHERAL",
+            "literal": "peripheral"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "base"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "of"
+                }
+            ],
+            "category": "BASE",
+            "literal": "base of"
+        },
+        {
+            "category": "BASE",
+            "literal": "base"
+        },
+        {
+            "category": "IGNORE",
+            "literal": "."
+        },
+        {
+            "category": "IGNORE",
+            "literal": "."
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "melanocytic"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "hyperplasia"
+                }
+            ],
+            "category": "melanocytic_hyperplasia",
+            "literal": "melanocytic hyperplasia"
+        },
+        {
+            "category": "IGNORE",
+            "literal": ";"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "REGEX": "^[\\d:]*$"
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "o'clock"
+                }
+            ],
+            "category": "PERIPHERAL",
+            "literal": "peripheral measure"
+        },
+        {
+            "category": "DEEP",
+            "literal": "all"
+        },
+        {
+            "category": "NEWLINE",
+            "literal": "\n"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "macrometastasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "macrometastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "micrometastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metasastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastasize"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatric"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "oligometastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatses"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metasteses"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastaic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastasized"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastastes"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatasais"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatstic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "mestastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastiatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metaststatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatastic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastaiss"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metaststic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatoc"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatstases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastaases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "macrometastases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastiasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastasised"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metestatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatstasis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metstatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastatsis"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastates"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "matastatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "micrometastases"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "mets"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metatstatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metsatatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metasatic"
+        },
+        {
+            "category": "METASTASIS",
+            "literal": "metastisis"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melamona"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanomic"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanona"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melalnoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanomaof"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melinoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melonaoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melonma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanom"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanomma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanmoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melnaoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melonama"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melaonoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melenoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "meolanoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "mealnoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melonoma"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "melanoam"
+        },
+        {
+            "category": "MELANOMA",
+            "literal": "ssmelanoma"
+        },
+        {
+            "category": "T_STAGE",
+            "literal": "Tis"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "mmis"
+                }
+            ],
+            "category": "in situ",
+            "literal": "Histology_group6"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "mm"
+                },
+                {
+                    "TEXT": "-"
+                },
+                {
+                    "LOWER": "is"
+                }
+            ],
+            "category": "in situ",
+            "literal": "Histology_group6"
+        },
+        {
+            "pattern": [
+                {
+                    "TEXT": {
+                        "IN": [
+                            "MIS",
+                            "Mis"
+                        ]
+                    }
+                }
+            ],
+            "category": "in situ",
+            "literal": "Histology_group6"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "scc",
+                            "scca"
+                        ]
+                    }
+                }
+            ],
+            "category": "Squamous cell carcinoma",
+            "literal": "Squamous cell carcinoma"
+        },
+        {
+            "pattern": [
+                {
+                    "LOWER": "in"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "OP": "{,2}"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "situs"
+                }
+            ],
+            "category": "in situ",
+            "literal": "in situs"
+        }
+    ]
+}

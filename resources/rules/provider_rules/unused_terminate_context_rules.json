@@ -1,0 +1,3300 @@
+{
+    "context_rules": [
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "apart from",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "apart"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "from"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as a cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "as"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "a",
+                            "an",
+                            "the"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "secondary",
+                    "OP": "?"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "etiology",
+                            "source",
+                            "reason"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "as has",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "aside from",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "because",
+            "category": "HYPOTHETICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "because",
+                            "since"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "but",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "but",
+                            "however",
+                            "nevertheless",
+                            "still",
+                            "except",
+                            "though",
+                            "although",
+                            "yet"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "cause for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "cause",
+                            "causes",
+                            "reason",
+                            "reasons",
+                            "etiology"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "origin for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "origin",
+                            "origins"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "of",
+                            "for"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "other possibilities of",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "secondary",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": "secondary"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": "to",
+                    "OP": "?"
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "source for",
+            "category": "NEGATED_EXISTENCE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "source",
+                            "sources"
+                        ]
+                    }
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]*\\n[^\\S\\n]*$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "TEXT": {
+                        "REGEX": "^[^\\S\\n]+$"
+                    },
+                    "OP": "*"
+                },
+                {
+                    "LOWER": {
+                        "IN": [
+                            "for",
+                            "of"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "trigger event for",
+            "category": "NEGATED_EXISTENCE",
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "presentation",
+            "category": "HISTORICAL",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "IN": [
+                            "present",
+                            "presenting",
+                            "presents"
+                        ]
+                    }
+                }
+            ],
+            "max_targets": 1,
+            "max_scope": 8
+        },
+        {
+            "direction": "TERMINATE",
+            "literal": "comes in with",
+            "category": "HISTORICAL",
+            "max_targets": 1,
+            "max_scope": 8
+        }
+    ]
+}
