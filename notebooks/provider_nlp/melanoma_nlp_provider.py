@@ -239,7 +239,7 @@ def table_import(clean_query: str, db_server: str, db_db: str) -> pd.DataFrame:
     return df
 
 
-def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> List[medspacy.ner.TargetRule]:
+def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> list[medspacy.ner.TargetRule]:
     """
     Load target matching rules from a CSV file and convert them into medspacy TargetRule objects. Intended to assist NLP development by allowing easy editing of rules in a spreadsheet format.
     Args:
@@ -289,7 +289,7 @@ def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> Lis
     return target_rules
 
 
-def csv_to_contextrules(filepath=None, insert_whitespace_matching=False) -> List[medspacy.context.ConTextRule]:
+def csv_to_contextrules(filepath=None, insert_whitespace_matching=False) -> list[medspacy.context.ConTextRule]:
     """
     Load context rules from a CSV file and convert them into medspacy ConTextRule objects. Intended to assist NLP development by allowing easy editing of rules in a spreadsheet format.
     Args:
@@ -611,7 +611,7 @@ def build_nlp(
 
     file_path="./", csv_or_json_rule_import="json", insert_whitespace_matching=False
 ):
-"""    
+    """    
     Constructs and returns a customized MedSpaCy NLP pipeline for melanoma-related clinical text processing.
     The pipeline includes:
         - Preprocessing steps using user-defined rules.
@@ -631,7 +631,7 @@ def build_nlp(
         spacy.language.Language: A configured MedSpaCy NLP pipeline instance.
     Raises:
         Exception: If rule files cannot be loaded or processed.
-"""
+    """
     nlp = medspacy.load(
         medspacy_disable=[
             "medspacy_pyrush",
@@ -1386,7 +1386,7 @@ def data_transformation(docIDs, docs):
 
 
 def spacy_to_df_melanoma(docIDs, docs):
-        """
+    """
     Processes spaCy documents to extract melanoma-related entities and their modifiers, 
     mapping them to structured data suitable for analysis.
     Args:
@@ -2187,7 +2187,7 @@ def upload_to_cdw(
 
 
 def transform_annot_df(annot_df, include_no_top_annot=True, binary_classification=True):
-        """
+    """
     Transforms a pathology annotation DataFrame into a structured format for comparison.
     Extracts and maps clinical features (histology, Breslow thickness, Clark level, ulceration, mitotic index, metastasis, margins, diagnosis).
     Supports binary or continuous classification and can add synthetic annotations for missing top-level diagnoses.

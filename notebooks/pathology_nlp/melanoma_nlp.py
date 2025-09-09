@@ -239,7 +239,7 @@ def table_import(clean_query: str, db_server: str, db_db: str) -> pd.DataFrame:
     return df
 
 
-def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> List[medspacy.ner.TargetRule]:
+def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> list[medspacy.ner.TargetRule]:
     """
     Load target matching rules from a CSV file and convert them into medspacy TargetRule objects. Intended to assist NLP development by allowing easy editing of rules in a spreadsheet format.
     Args:
@@ -289,7 +289,7 @@ def csv_to_targetmatcher(filepath=None, insert_whitespace_matching=False) -> Lis
     return target_rules
 
 
-def csv_to_contextrules(filepath=None, insert_whitespace_matching=False) -> List[medspacy.context.ConTextRule]:
+def csv_to_contextrules(filepath=None, insert_whitespace_matching=False) -> list[medspacy.context.ConTextRule]:
     """
     Load context rules from a CSV file and convert them into medspacy ConTextRule objects. Intended to assist NLP development by allowing easy editing of rules in a spreadsheet format.
     Args:
@@ -348,9 +348,9 @@ def csv_to_contextrules(filepath=None, insert_whitespace_matching=False) -> List
 
 def targetrules_to_df(
     targetrules :list,
-    remove_whitespace_matching=True: bool,
-    include_direction=False: bool,
-    include_scope=False: bool,
+    remove_whitespace_matching: bool=True,
+    include_direction: bool=False,
+    include_scope: bool=False,
 ) -> pd.DataFrame:
 
     """
