@@ -23,13 +23,14 @@ The included postprocessing package will further transform the MedspaCy output. 
 5) extracts entities and related features and parse output for measurement values
 6) aggregate all histologies and associated features at a biopsy sample  level, and incorporate sample level logic for combining and interpreting results, and
 7) aggregate information for document-level analysis.
-*Note that the postprocessing may be merged into the medspacy pipeline on a future iteration
 
 Rules for all taggers, named entity matchers, and context matchers are included in the 'resources' folder and are organized by concepts.
 
 ## Output Types
 
-Data goes through several transformations. The basic, raw output of the system and initial mappings are within the transform_dict[] dataframe. Data is aggregated based on feature-histology relationships, and histology-topography relationships. Some logic is also applied on a sample level. The below output table shows the table for specimen level.
+The raw output + mappings, along with the transformed datasets are stored within the 'transform_dict' dataframes, as shown in the notebook tutorials. For the transformations, data is aggregated based on feature-histology relationships, and histology-topography relationships. Some logic is also applied on a sample level. The below output table shows the table for the validated final, specimen-level transformation.
+
+For information on transformation logic and a more detailed data dictionary, see 'Overview_of_melanoma_pipeline' and 'Data_Dictionary_for_nlp_out_table' documents.
 
 | Output Type             | Description                                                                                                                                                                                                                                                                                                     |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
